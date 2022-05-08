@@ -4,6 +4,10 @@
 
 "Ola estou criando o plugin de Minecraft java spigot na versão 1.17.1, este plugin tem como seu principal objetivo ativar os produtos comprados pelos jogadores na nossa loja!"
 
+**Ja estar em funcionamento:**
+
+ • conexão com mysql 
+
 # 🔗 instalação
 
  usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java 17`:
