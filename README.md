@@ -6,7 +6,12 @@
 
 # 🔗 instalação
 
- usamos o compilador `maven` para compilar nosso plugin então baixe ele e o java da 17:
+ usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java da 17`:
  ```
- apt-get install maven
+ apt-get install maven -y
  ```
+ 
+ depois de ter instalado o `java 17` e o `maven` clone o nosso repositório:
+ ```
+git clone https://github.com/sebastianjnuwu/plugin
+```
