@@ -20,3 +20,5 @@ git clone https://github.com/sebastianjnuwu/plugin
  ```
  cd plugin && mvn install
 ```
+
+o plugin estara na pasta `/target`, coloque na pasta `plugins` do servidor e ligue! funcionou? eu sei que sim! ;-;
