@@ -15,3 +15,8 @@
  ```
 git clone https://github.com/sebastianjnuwu/plugin
 ```
+
+ pronto agora você pode codar a vontade! para compilar o plugin basta executar:
+ ```
+ cd plugin && mvn install
+```
