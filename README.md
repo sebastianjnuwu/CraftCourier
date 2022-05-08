@@ -6,7 +6,7 @@
 
 # 🔗 instalação
 
- usamos o compilador `maven` para compilar nosso plugin então baixe ele!
+ usamos o compilador `maven` para compilar nosso plugin então baixe ele e o java da 17:
  ```
  apt-get install maven
  ```
