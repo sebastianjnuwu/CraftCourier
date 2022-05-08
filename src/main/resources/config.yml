@@ -1,1 +1,8 @@
-a
+#conexao ao banco de dados
+
+MySQL:
+  host: "host"
+  usuario: "usuario"
+  senha: "senha"
+  database: "database"
+  
