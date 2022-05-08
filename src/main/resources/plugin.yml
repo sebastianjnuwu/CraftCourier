@@ -1,0 +1,11 @@
+name: KettraShop
+
+version: 1.0
+
+api-version: 1.17
+
+main: io.kettra.plugins.belly.Belly
+
+author: sebastianjnuwu
+
+website: https://kettraworld.github.io
