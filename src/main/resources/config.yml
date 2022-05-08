@@ -1,4 +1,4 @@
-#conexao ao banco de dados
+# conexao ao banco de dados
 
 MySQL:
   host: "host"
