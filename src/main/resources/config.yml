@@ -1,8 +1,12 @@
 # conexao ao banco de dados
-
 MySQL:
-  host: "host"
-  usuario: "usuario"
-  senha: "senha"
-  database: "database"
-  
+  host: " "
+  usuario: " "
+  senha: " "
+  database: " "
+# configurações de tempo para fazer a busca no mysql!
+tempo: 1
+# id dos produtos mais comandos!
+1:
+  commands:
+  - cash add @player 15
