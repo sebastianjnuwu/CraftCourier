@@ -1,4 +1,4 @@
-# 👋 KettraShop: SpigotApi 1.17.1
+# KettraShop
 
 ![](https://media.discordapp.net/attachments/969290884300537868/972667991491756053/spigot.png)
 
@@ -30,4 +30,3 @@ git clone https://github.com/sebastianjnuwu/plugin
 ```
 
 o plugin estara na pasta `/target`, coloque na pasta `plugins` do servidor e ligue! funcionou? eu sei que sim! ;-;
-
