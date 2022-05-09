@@ -13,7 +13,6 @@ import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
-
 public class Belly extends JavaPlugin {
     
     // conexão com mysql!
@@ -23,9 +22,8 @@ public class Belly extends JavaPlugin {
     public void onEnable() {
 		
        saveDefaultConfig();
-	   reloadConfig();
+	     reloadConfig();
        
-       // mensagem no console quando o plugin é ligado
        getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §aPlugin Ligado com sucesso!");
       
        try {
@@ -40,12 +38,10 @@ public class Belly extends JavaPlugin {
       }
       
       new BukkitRunnable() {
-
 			@Override
 			public void run() {
 				try {
 					check();
-					
 				} catch (SQLException e) {
 					getLogger().severe("Erro ao realizar checagem: " + e.getMessage());
 				}
@@ -57,7 +53,7 @@ public class Belly extends JavaPlugin {
 
 		PreparedStatement check = con.prepareStatement("SELECT * FROM `transacao` WHERE `nick` = ?");
         
-        for (Player p : Bukkit.getOnlinePlayers()) {
+    for (Player p : Bukkit.getOnlinePlayers()) {
 			check.setString(1, p.getName());
 			ResultSet rs = check.executeQuery();
 			
@@ -83,10 +79,8 @@ public class Belly extends JavaPlugin {
 }
 		
     @Override
-   
     public void onDisable() {
-        
+   
         getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §cPlugin Desligado com sucesso!");
-        
     }
 }
