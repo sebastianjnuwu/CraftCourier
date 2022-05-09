@@ -1,15 +1,12 @@
-# ℙ𝕝𝕦𝕘𝕚𝕟  𝕂𝕖𝕥𝕥𝕣𝕒𝕊𝕙𝕠𝕡
-# ฅ^•ﻌ•^ฅ Github: https://github.com/sebastianjnuwu/plugin
-
 # conexao ao banco de dados
 MySQL:
-  host: " "
-  usuario: " "
-  senha: " "
-  database: " "
+  host: ""
+  usuario: ""
+  senha: ""
+  database: ""
 # configurações de tempo para fazer a busca no mysql!
 tempo: 1
-# id dos produtos mais comandos!
+# id dos produtos + comandos a serem executados!
 1:
   commands:
   - cash add @player 15
