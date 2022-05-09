@@ -43,7 +43,7 @@ public class Belly extends JavaPlugin {
 				try {
 					check();
 				} catch (SQLException e) {
-					getLogger().severe("Erro ao realizar checagem: " + e.getMessage());
+					getLogger().severe("[ KettraShop ] - houve um erro: " + e.getMessage());
 				}
 			}
 		}.runTaskTimerAsynchronously(this, getConfig().getInt("tempo") * 1200L, getConfig().getInt("tempo") * 1200L);
@@ -51,7 +51,7 @@ public class Belly extends JavaPlugin {
     
     private void check() throws SQLException {
 
-		PreparedStatement check = con.prepareStatement("SELECT * FROM `transacao` WHERE `nick` = ?");
+		PreparedStatement check = con.prepareStatement("SELECT * FROM transacao WHERE nick = ? and status = '2'");
         
     for (Player p : Bukkit.getOnlinePlayers()) {
 			check.setString(1, p.getName());
