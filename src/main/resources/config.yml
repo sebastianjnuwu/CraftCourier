@@ -4,9 +4,12 @@ MySQL:
   usuario: ""
   senha: ""
   database: ""
+  
 # configurações de tempo para fazer a busca no mysql!
 tempo: 1
+
 # id dos produtos + comandos a serem executados!
 1:
   commands:
-  - cash add @player 15
+  - money @player 150
+  
