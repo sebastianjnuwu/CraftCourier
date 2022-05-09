@@ -6,7 +6,9 @@
 
 **Ja estar em funcionamento:**
 
- • conexão com mysql 
+ • conexão com mysql.
+ 
+ • sistema de checagem e entrega de produto.
 
 # 🔗 instalação
 
