@@ -30,3 +30,5 @@ git clone https://github.com/sebastianjnuwu/plugin
 ```
 
 o plugin estara na pasta `/target`, coloque na pasta `plugins` do servidor e ligue! funcionou? eu sei que sim! ;-;
+
+
