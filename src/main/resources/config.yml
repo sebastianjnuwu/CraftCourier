@@ -9,7 +9,7 @@ MySQL:
 tempo: 1
 
 # mensagem no chat para todos os players ( nome do jogador vem na frente!)
-broadcast: "§a @player Obrigado por efetua sua compra!"
+msg: "§a @player Obrigado por efetua sua compra!"
 
 # produto um
 1:
