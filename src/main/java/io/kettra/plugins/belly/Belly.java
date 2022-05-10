@@ -69,7 +69,7 @@ public class Belly extends JavaPlugin {
 		    delete.setString(1, code);
 			delete.executeUpdate();
 			
-       p.sendMessage(getConfig().getString("broadcast").replaceAll("&", "§").replaceAll("@player", p.getName()));
+       p.sendMessage(getConfig().getString("msg").replaceAll("&", "§").replaceAll("@player", p.getName()));
 		
 		new BukkitRunnable() {	
 			@Override
