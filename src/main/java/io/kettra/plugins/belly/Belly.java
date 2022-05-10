@@ -15,10 +15,9 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class Belly extends JavaPlugin {
     
-    // conexão com mysql!
     private Connection con;
     
-    @Override // ação de quando o plugin é ligado!
+    @Override
     public void onEnable() {
 		
          saveDefaultConfig();
@@ -27,12 +26,12 @@ public class Belly extends JavaPlugin {
        getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §aPlugin Ligado com sucesso!");
       
        try {
-	// conexão com mysql
+           
  con = DriverManager.getConnection("jdbc:mysql://" + getConfig().getString("MySQL.host") + "/" + getConfig().getString("MySQL.database"), getConfig().getString("MySQL.usuario"), getConfig().getString("MySQL.senha"));
-    // caso ah algum erro aparece essa mensagem no console!
+
  } catch (SQLException e) {
    getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §cNão foi possível conectar ao MySQL: " + e.getMessage());
-   setEnabled(true);
+   setEnabled(false);
    return;
    
       }
@@ -68,9 +67,9 @@ public class Belly extends JavaPlugin {
 		    
 		    delete.setString(1, code);
 			delete.executeUpdate();
-			
-       p.sendMessage(getConfig().getString("msg").replaceAll("&", "§").replaceAll("@player", p.getName()));
 		
+   p.sendMessage(getConfig().getString("mensagem").replaceAll("&", "§").replaceAll("@player", p.getName()));
+   
 		new BukkitRunnable() {	
 			@Override
 			public void run() {

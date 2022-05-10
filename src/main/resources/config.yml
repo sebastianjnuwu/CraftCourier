@@ -8,31 +8,35 @@ MySQL:
 # configurações de tempo para fazer a busca no mysql!
 tempo: 5
 
-# mensagem no chat para todos os players ( nome do jogador vem na frente!)
-msg: "§a @player Obrigado por efetua sua compra!"
+# mensagem para o jogador que efetuou a compra!
+mensagem: "§6[ §7Anjo§6 ] - §a @player Obrigado por adquirir os produtos na nossa loja!"
 
-# produto um
+# produto Kaystilla
 1:
  commands:
  - eco give  @player 1
 
-# produtos dois
+# produto Kyoshi
 2:
  commands:
  - eco give  @player 2
- 
+
+# produto Aema
 3:
  commands:
  - eco give  @player 3
-  
+
+# produto Lassarnalia
 4:
  commands:
  - eco give  @player 4
-  
+
+# produto Kallisto
 5:
  commands:
  - eco give  @player 5
 
+# produtos Senhir
 6:
  commands:
  - eco give  @player 6
