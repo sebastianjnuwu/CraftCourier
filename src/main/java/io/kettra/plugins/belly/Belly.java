@@ -21,7 +21,7 @@ public class Belly extends JavaPlugin {
     @Override // ação de quando o plugin é ligado!
     public void onEnable() {
 		
-       saveDefaultConfig();
+         saveDefaultConfig();
 	     reloadConfig();
        
        getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §aPlugin Ligado com sucesso!");
@@ -41,9 +41,9 @@ public class Belly extends JavaPlugin {
 			@Override
 			public void run() {
 				try {
-					check();
+					check(); 
 				} catch (SQLException e) {
-					getLogger().severe("[ KettraShop ] - houve um erro: " + e.getMessage());
+					getLogger().severe(" - houve um erro: " + e.getMessage());
 				}
 			}
 		}.runTaskTimerAsynchronously(this, getConfig().getInt("tempo") * 1200L, getConfig().getInt("tempo") * 1200L);
@@ -51,20 +51,27 @@ public class Belly extends JavaPlugin {
     
     private void check() throws SQLException {
 
-		PreparedStatement check = con.prepareStatement("SELECT * FROM transacao WHERE nick = ? and status = '2'");
-        
+		PreparedStatement check = con.prepareStatement("SELECT * FROM transacao WHERE nick = ? and status_transacao = '2'");
+		
+        PreparedStatement delete = con.prepareStatement("DELETE FROM transacao WHERE uuid = ?");
+
     for (Player p : Bukkit.getOnlinePlayers()) {
 			check.setString(1, p.getName());
 			ResultSet rs = check.executeQuery();
 			
 		if (rs.next()) {
 				String code = rs.getString("uuid");
-				int productCode = rs.getInt("id_produto");
+				int productCode = rs.getInt("id_pacote");
 				String product = Integer.toString(productCode);
 			
 		if (getConfig().isList(product + ".commands")) {
-			new BukkitRunnable() {
-
+		    
+		    delete.setString(1, code);
+			delete.executeUpdate();
+			
+       p.sendMessage(getConfig().getString("broadcast").replaceAll("&", "§").replaceAll("@player", p.getName()));
+		
+		new BukkitRunnable() {	
 			@Override
 			public void run() {
 					for (String cmd : getConfig().getStringList(product + ".commands")) {
@@ -76,8 +83,8 @@ public class Belly extends JavaPlugin {
 			}
 		}
 	}
-}
-		
+ }
+
     @Override
     public void onDisable() {
    

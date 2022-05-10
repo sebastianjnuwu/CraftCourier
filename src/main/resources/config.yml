@@ -8,8 +8,31 @@ MySQL:
 # configurações de tempo para fazer a busca no mysql!
 tempo: 1
 
-# id dos produtos + comandos a serem executados!
+# mensagem no chat para todos os players ( nome do jogador vem na frente!)
+broadcast: "§a @player Obrigado por efetua sua compra!"
+
+# produto um
 1:
-  commands:
-  - money @player 150
+ commands:
+ - eco give  @player 1
+
+# produtos dois
+2:
+ commands:
+ - eco give  @player 2
+ 
+3:
+ commands:
+ - eco give  @player 3
   
+4:
+ commands:
+ - eco give  @player 4
+  
+5:
+ commands:
+ - eco give  @player 5
+
+6:
+ commands:
+ - eco give  @player 6
