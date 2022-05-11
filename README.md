@@ -1,6 +1,6 @@
 <h1 align="center">KettraShop</h1>
 
-<h1 align="center">" simples plugin de arivação de produtos ( cash,ouro, money etc) dentro do Minecraft.</h1>
+<h2 align="center">" simples plugin de ativação de produtos da loja, dentro do Minecraft"</h2>
 
 # 🔗 instalação
 
