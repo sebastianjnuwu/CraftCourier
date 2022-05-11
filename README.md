@@ -4,6 +4,9 @@
 
 "Ola estou criando o plugin de Minecraft java spigot na versão 1.17.1, este plugin tem como seu principal objetivo ativar os produtos comprados pelos jogadores na nossa loja!"
 
+# bstarts
+![](https://bstats.org/signatures/bukkit/KettraShop.svg)
+
 # Metas a serem compridas!
   <ul>
         <li>[x] • Conexão com mysql. </li>
