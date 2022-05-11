@@ -1,5 +1,7 @@
 <h1 align="center">KettraShop</h1>
+
 ![](https://www.minecraft.net/content/dam/minecraft/community/floatinghouse.png.transform/minecraft-image-small/image.png)
+
 "simples plugin de ativação de produtos da loja, dentro do Minecraft"
 
 # 🔗 instalação
