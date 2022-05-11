@@ -12,7 +12,6 @@
         <li>[x] • Conexão com mysql. </li>
         <li>[x] • executar comandos pelo id dos produtos. </li>
         <li>[ ] • mensagem no discord via webhook. </li>
-        <li>[ ] • sistema sqlite para guarda os dados. </li>
    </ul>
    
 # 🔗 instalação
