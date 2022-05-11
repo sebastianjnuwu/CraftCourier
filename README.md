@@ -1,6 +1,6 @@
 <h1 align="center">KettraShop</h1>
 
-<img src="https://media.discordapp.net/attachments/969290884300537868/972667991491756053/spigot.png" class="center">
+<h1 align="center">" simples plugin de arivação de produtos ( cash,ouro, money etc) dentro do Minecraft.</h1>
 
 # 🔗 instalação
 
@@ -20,5 +20,4 @@ git clone https://github.com/sebastianjnuwu/plugin
 ```
 
 o plugin estara na pasta `/target`, coloque na pasta `plugins` do servidor e ligue! funcionou? eu sei que sim! ;-;
-
 
