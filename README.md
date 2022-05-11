@@ -1,5 +1,7 @@
 <h1 align="center">KettraShop</h1>
-   
+
+<img src="https://media.discordapp.net/attachments/969290884300537868/972667991491756053/spigot.png" size="175" width="250" ><img 
+
 # 🔗 instalação
 
  usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java 17`:
