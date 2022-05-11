@@ -1,0 +1,42 @@
+# conexao ao banco de dados
+MySQL:
+  host: ""
+  usuario: ""
+  senha: ""
+  database: ""
+  
+# configurações de tempo para fazer a busca no mysql!
+tempo: 5
+
+# mensagem no chat para todos os players ( nome do jogador vem na frente!)
+mensagem: "§f[Ket§btr§ca§aSh§bop§f] §f- §a @player Obrigado por efetua sua compra, pessoas como você não fazem a gente desstir obrigada!"
+
+# produto Kaystilla
+1:
+ commands:
+ - ouro adicionar @player 1800
+
+# produtos Kyoshi
+2:
+ commands:
+ - ouro adicionar @player 3500
+
+# produto Aema
+3:
+ commands:
+ - ouro adicionar @player 4700
+
+# produto Lassarnalia
+4:
+ commands:
+ - ouro adicionar @player 7500
+  
+# produto Kallisto
+5:
+ commands:
+ - ouro adicionar @player 10900
+
+# produto Senhir
+6:
+ commands:
+ - ouro adicionar @player 26300
