@@ -1,6 +1,6 @@
 <h1 align="center">KettraShop</h1>
 
-<img src="https://media.discordapp.net/attachments/969290884300537868/972667991491756053/spigot.png" size="175" width="250" ><img 
+<img src="https://media.discordapp.net/attachments/969290884300537868/972667991491756053/spigot.png" class="center">
 
 # 🔗 instalação
 
