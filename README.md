@@ -22,6 +22,13 @@ MySQL:
 tempo: 5
 ```
 
+**3 -** notificação via webhook do discord, obrigatoriamente a usar esya configurações, na `url` você coloca o token/link do webhook e na `mensagem` o que o webhook vai aparecer ( @player é o nome do jogador )
+```yml
+# notificação via webhook do discord
+webhook:
+       url: ""
+       mensagem: ""
+```
 # 🔗 Desenvolvedores
 
  usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java 17`:
