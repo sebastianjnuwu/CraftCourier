@@ -6,7 +6,7 @@ _"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
 
 caso você não temha uma loja virtual para seu servidor você podera comprar de mim por `R$ 131,98` entre em contato via discord: `SEBASTIAN JN ฅ^•ﻌ•^ฅ#7879`
 
-Baixe o plugin clicando [aqui]() e coloque na pasta `plugins` do seu servidor e preencha as configurações como se pede!
+Baixe o plugin clicando [aqui](https://cdn.discordapp.com/attachments/969290884300537868/975376503208546354/Kettrashop.jar) e coloque na pasta `plugins` do seu servidor e preencha as configurações como se pede!
 
 **1 -** Para o plugin funciona você precisa colocar as informações corretas para se conectar ao MySql!
 ```yml
