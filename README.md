@@ -4,10 +4,8 @@ _"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
 
 # ⚙️ Configurações
 
-KettraShop é um plugin indicado para ativar os produtos da sua loja virtul do Minecraft ( cash, money etc...), caso não tenha um loja virtual faça uma ou compre de mim por `R$ 131,98`.
+caso você não temha uma loja virtual para seu servidor você podera comorar de mim por `R$ 131,98`entre em contato via discord: `SEBASTIAN JN ฅ^•ﻌ•^ฅ#7879`
 
-Para as pessoas que iram criar a loja virtual do servidor de minecraft é para colocar a tabela igual a esta logo abaixo e caso a comora for aprovada o `status 2` assim o plugin ativara os produtos automaticamente!
-![](https://media.discordapp.net/attachments/969290884300537868/975371500775411752/Screenshot_20220515-091425.jpg)
 
 Para o plugin funciona você precisa colocar as informações corretas para se conectar ao MySql!
 ```yml
