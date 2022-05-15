@@ -36,6 +36,14 @@ webhook:
 mensagem: ""
 ```
 
+**5 -** seguindo essa mesma configuração para os outros produtos: id, comando! ( @player é o nome do jogador )
+```yml
+# produto id,commandos
+1:
+ commands:
+ - dar @player produto
+```
+
 # 🔗 Desenvolvedores
 
  usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java 17`:
