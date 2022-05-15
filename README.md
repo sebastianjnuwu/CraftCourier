@@ -1,6 +1,6 @@
 <h1 align="center">KettraShop</h1>
 
-"simples plugin de ativação de produtos da loja, dentro do Minecraft"
+_"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
 
 # 🔗 Desenvolvedores
 

@@ -1,5 +1,6 @@
 package io.kettra.plugins.belly;
 
+import io.kettra.plugins.belly.DiscordWebhook;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -70,6 +71,14 @@ public class Belly extends JavaPlugin {
 		
    p.sendMessage(getConfig().getString("mensagem").replaceAll("&", "§").replaceAll("@player", p.getName()));
    
+   DiscordWebhook webhook = new DiscordWebhook(getConfig().getString("webhook.url"));
+   webhook.setContent(getConfig().getString("webhook.mensagem").replaceAll("@player", p.getName()));
+   
+      try {
+                webhook.execute();
+            } catch (Exception e) {
+                getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- " + e);
+            }
 		new BukkitRunnable() {	
 			@Override
 			public void run() {
