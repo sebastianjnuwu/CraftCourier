@@ -16,6 +16,12 @@ MySQL:
   database: ""
 ```
 
+**2 -** tempo para fazer a busca por novas compras aprovadas, recomendado ser mais de 5 minutos!
+```yml
+# configurações de tempo para fazer a busca no mysql!
+tempo: 5
+```
+
 # 🔗 Desenvolvedores
 
  usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java 17`:
