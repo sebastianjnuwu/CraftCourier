@@ -29,6 +29,13 @@ webhook:
        url: ""
        mensagem: ""
 ```
+
+**4 -** a mensagem que aparecera no chat apenas para o jogador que fez a compra! ( @player é o nome do jogador )
+```yml
+# mensagem no chat para todos os players ( nome do jogador vem na frente!)
+mensagem: ""
+```
+
 # 🔗 Desenvolvedores
 
  usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java 17`:
