@@ -6,7 +6,7 @@ _"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
 
 caso você não temha uma loja virtual para seu servidor você podera comprar de mim por `R$ 131,98` entre em contato via discord: `SEBASTIAN JN ฅ^•ﻌ•^ฅ#7879`
 
-Para o plugin funciona você precisa colocar as informações corretas para se conectar ao MySql!
+**1 -** Para o plugin funciona você precisa colocar as informações corretas para se conectar ao MySql!
 ```yml
 # conexao ao banco de dados
 MySQL:
