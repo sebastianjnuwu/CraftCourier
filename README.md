@@ -2,6 +2,8 @@
 
 _"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
 
+# ⚙️ Configurações
+
 # 🔗 Desenvolvedores
 
  usamos o compilador `maven` para compilar nosso plugin então baixe ele e o `java 17`:
