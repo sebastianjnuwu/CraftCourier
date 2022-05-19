@@ -1,5 +1,6 @@
-package io.kettra.plugins.belly;
+package io.kettra.plugins.belly.discord;
 
+import io.kettra.plugins.belly.Belly;
 import javax.net.ssl.HttpsURLConnection;
 import java.awt.Color;
 import java.io.IOException;

@@ -1,6 +1,6 @@
 package io.kettra.plugins.belly;
 
-import io.kettra.plugins.belly.DiscordWebhook;
+import io.kettra.plugins.belly.discord.DiscordWebhook;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -10,9 +10,11 @@ import java.sql.Timestamp;
 import org.bukkit.Bukkit;
 import org.bukkit.Material;
 import org.bukkit.entity.Player;
+import org.bstats.bukkit.Metrics;
 import org.bukkit.inventory.ItemStack;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
+
 
 public class Belly extends JavaPlugin {
     
@@ -21,6 +23,9 @@ public class Belly extends JavaPlugin {
     @Override
     public void onEnable() {
 		
+		int pluginId = 15226; 
+        Metrics metrics = new Metrics(this, pluginId);
+        
          saveDefaultConfig();
 	     reloadConfig();
        
