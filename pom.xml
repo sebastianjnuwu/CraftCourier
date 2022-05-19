@@ -6,7 +6,7 @@
 
     <groupId>io.kettra.plugins</groupId>
     <artifactId>kettrashop</artifactId>
-    <version>1.0.0</version>
+    <version>1.2</version>
     <name>Kettrashop</name>
 
     <properties>
