@@ -35,7 +35,7 @@ webhook:
 
 **4 -** a mensagem que aparecera no chat apenas para o jogador que fez a compra! ( @player é o nome do jogador )
 ```yml
-# mensagem no chat para todos os players ( nome do jogador vem na frente!)
+# mensagem no chat que aparecera apenas para o jogador que efetuou a compra!
 mensagem: ""
 ```
 
