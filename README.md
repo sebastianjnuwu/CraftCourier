@@ -1,9 +1,10 @@
 <h1 align="center">KettraShop</h1>
 
-**Bstats**
+_"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
+
+# Bstats
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
 
-_"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
 
 # ⚙️ Configurações
 
