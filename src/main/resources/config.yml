@@ -13,7 +13,7 @@ webhook:
        url: ""
        mensagem: ""
 
-# mensagem no chat para todos os players ( nome do jogador vem na frente!)
+# mensagem no chat para o jogador que fez a compra!
 mensagem: ""
 
 # produto id,commandos
