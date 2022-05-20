@@ -3,6 +3,9 @@
 _"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
 
 # Bstats
+
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/2fd1d707e84c4701abf3803cef49b751)](https://app.codacy.com/gh/sebastianjnuwu/KettraShop?utm_source=github.com&utm_medium=referral&utm_content=sebastianjnuwu/KettraShop&utm_campaign=Badge_Grade_Settings)
+
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
 
 # ⚙️ Configurações
