@@ -40,13 +40,13 @@ webhook:
        mensagem: ""
 ```
 
-**4 -** a mensagem que aparecera no chat apenas para o jogador que fez a compra! ( @player é o nome do jogador )
+**4 -** the message that appears in the chat only for the player who made the purchase! (@player is the buyer's name)
 ```yml
 # mensagem no chat que aparecera apenas para o jogador que fez a compra!
 mensagem: ""
 ```
 
-**5 -** seguindo essa mesma configuração para os outros produtos: id, comando! ( @player é o nome do jogador )
+**5 -** following this same configuration for the other products: id, command! (@player is the buyer's name)
 ```yml
 # produto id,commandos
 1:
