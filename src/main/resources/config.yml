@@ -1,27 +1,26 @@
-########################
- # documentation:
+#################################################################
  # configuration: https://github.com/sebastianjnuwu/KettraShop
-########################
+#################################################################
 
-# conexao ao banco de dados
+# database connection 
 MySQL:
   host: ""
   usuario: ""
   senha: ""
   database: ""
 
-# configurações de tempo para fazer a busca no mysql!
+# time settings to do mysql fetch!
 tempo: 5
 
-# notificação via webhook do discord
+# Discord webhook notification (required)
 webhook:
        url: ""
        mensagem: ""
 
-# mensagem no chat para o jogador que fez a compra!
+# message in chat to the player who made the purchase!
 mensagem: ""
 
-# produto id,commandos
+# product id, commands
 1:
  commands:
  - dar @player produto 
