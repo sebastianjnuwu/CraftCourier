@@ -32,7 +32,7 @@ MySQL:
 tempo: 5
 ```
 
-**3 -** notification via discord webhook, remembering it is mandatory to use, access the discord server create a webhook copy the url and paste in `url` in `config.yml` , right after configure the webhook message ( @player is the buyer's name)
+**3 -** notification via discord webhook, remembering it is mandatory to use, access the discord server create a webhook copy the url and paste in `url`, right after configure the webhook message ( @player is the buyer's name)
 ```yml
 # notificação via webhook do discord
 webhook:
