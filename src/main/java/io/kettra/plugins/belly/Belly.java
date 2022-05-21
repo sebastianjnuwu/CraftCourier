@@ -26,7 +26,7 @@ public class Belly extends JavaPlugin {
          saveDefaultConfig();
 	     reloadConfig();
        
-       getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §aPlugin Ligado com sucesso!");
+       getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §a Plugin connected successfully!");
       
        try {
            
@@ -98,6 +98,6 @@ public class Belly extends JavaPlugin {
     @Override
     public void onDisable() {
    
-        getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §cPlugin Desligado com sucesso!");
+        getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §c Plugin successfully disconnected!");
     }
 }
