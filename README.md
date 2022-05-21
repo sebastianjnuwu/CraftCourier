@@ -32,7 +32,7 @@ MySQL:
 tempo: 5
 ```
 
-**3 -** notificação via webhook do discord, obrigatoriamente a usar esya configurações, na `url` você coloca o token/link do webhook e na `mensagem` o que o webhook vai aparecer ( @player é o nome do jogador )
+**3 -** notification via discord webhook, obligatorily using esya settings, in the `url` you put the webhook token/link and in the `message` what the webhook will appear ( @player is the player name)
 ```yml
 # notificação via webhook do discord
 webhook:
