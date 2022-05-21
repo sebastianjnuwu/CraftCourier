@@ -1,6 +1,6 @@
 <h1 align="center">KettraShop</h1>
 
-_"simple store product activation plugin, inside Minecraft"_
+   _"simple store product activation plugin, inside Minecraft"_
 
 <p align="center">
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
@@ -16,7 +16,7 @@ _"simple store product activation plugin, inside Minecraft"_
 
 Download the plugin by clicking [on here](https://github.com/sebastianjnuwu/KettraShop/releases/tag/1.2), Soon after configure it on your server with the information of each item correctly!
 
-**1 -** Para o plugin funciona você precisa colocar as informações corretas para se conectar ao MySql!
+**1 -** For the plugin to work you need to put the correct information to connect to MySql!
 ```yml
 # conexao ao banco de dados
 MySQL:
@@ -26,7 +26,7 @@ MySQL:
   database: ""
 ```
 
-**2 -** tempo para fazer a busca por novas compras aprovadas, recomendado ser mais de 5 minutos!
+**2 -** time to search for new approved purchases, recommended to be more than 5 minutes!
 ```yml
 # configurações de tempo para fazer a busca no mysql!
 tempo: 5
