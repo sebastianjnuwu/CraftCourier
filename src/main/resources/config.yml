@@ -1,3 +1,8 @@
+########################
+ # documentation:
+ # configuration: https://github.com/sebastianjnuwu/KettraShop
+########################
+
 # conexao ao banco de dados
 MySQL:
   host: ""
