@@ -12,9 +12,9 @@ _"simple store product activation plugin, inside Minecraft"_
 
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
 
-# ⚙️ Configurações
+# ⚙️ settings
 
-Baixe o plugin clicando [aqui](https://github.com/sebastianjnuwu/KettraShop/releases/tag/1.2), logo configure em seu servidor!
+Download the plugin by clicking [on here](https://github.com/sebastianjnuwu/KettraShop/releases/tag/1.2), Soon after configure it on your server with the information of each item correctly!
 
 **1 -** Para o plugin funciona você precisa colocar as informações corretas para se conectar ao MySql!
 ```yml
