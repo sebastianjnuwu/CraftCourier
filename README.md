@@ -1,6 +1,6 @@
 <h1 align="center">KettraShop</h1>
 
-_"simples plugin de ativação de produtos da loja, dentro do Minecraft"_
+_"simple store product activation plugin, inside Minecraft"_
 
 <p align="center">
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-blue.svg"/></a>
