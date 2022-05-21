@@ -32,7 +32,7 @@ MySQL:
 tempo: 5
 ```
 
-**3 -** notification via discord webhook, obligatorily using esya settings, in the `url` you put the webhook token/link and in the `message` what the webhook will appear ( @player is the player name)
+**3 -** notification via discord webhook, remembering it is mandatory to use, access the discord server create a webhook copy the url and paste in `url` in `config.yml` , right after configure the webhook message ( @player is the buyer's name)
 ```yml
 # notificação via webhook do discord
 webhook:
