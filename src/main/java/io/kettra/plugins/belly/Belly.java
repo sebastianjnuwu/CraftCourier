@@ -33,7 +33,7 @@ public class Belly extends JavaPlugin {
  con = DriverManager.getConnection("jdbc:mysql://" + getConfig().getString("MySQL.host") + "/" + getConfig().getString("MySQL.database"), getConfig().getString("MySQL.usuario"), getConfig().getString("MySQL.senha"));
 
  } catch (SQLException e) {
-   getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §cNão foi possível conectar ao MySQL: " + e.getMessage());
+   getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §cCould not connect to MySQL: " + e.getMessage());
    setEnabled(false);
    return;
    
