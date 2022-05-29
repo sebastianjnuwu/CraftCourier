@@ -72,10 +72,10 @@ mensagem: ""
 ```
 
 just configure your store's payment system according to this table:<br>
-`uuid`= purchase identification.<br>
-`nick`= the Nick of the player who made the purchase.<br>
-`id_pacote`= Product ID!<br>
-`data_transacao`= date the individual made the purchase!<br>
-`status_transacao`= payment status set the status to `2` if the purchase is approved!<br>
+`uuid` = purchase identification.<br>
+`nick` = the Nick of the player who made the purchase.<br>
+`id_pacote` = Product ID!<br>
+`data_transacao` = date the individual made the purchase!<br>
+`status_transacao` = payment status set the status to `2` if the purchase is approved!<br>
 
-Well if you are a `back-end` Developer I'm sure you managed to do it!
+if you're a back-end developer, you've got it, if you're not, have someone do it or buy it from a store with this system!
