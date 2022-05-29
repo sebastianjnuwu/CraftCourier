@@ -58,19 +58,6 @@ mensagem: ""
 
 # 🔗 developers
 
- we use the `maven` compiler to compile our plugin so download it and `java 17`:
- ```
- apt-get install maven -y 
- ```
+ For the plugin to work you need to have a virtual store you can buy by clicking [here](https://discord.com/users/932678185970192404) or create your own, then we will teach you how to integrate your store in our plugin!
  
- after you have installed `java 17` and `maven` clone our repository:
- ```
-git clone https://github.com/sebastianjnuwu/plugin
-```
-
- ready now you can code at will! To compile the plugin just run:
- ```
- cd plugin && mvn install
-```
-
-the plugin will be in the `/target` folder, put it in the `plugins` folder on the server and turn it on!
+ 
