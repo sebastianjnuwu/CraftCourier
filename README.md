@@ -71,11 +71,11 @@ mensagem: ""
 ) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
 ```
 
-just configure your store's payment system according to this table:
-`uuid`= purchase identification.
-`nick`= the Nick of the player who made the purchase.
-`id_pacote`= Product ID!
-`data_transacao`= date the individual made the purchase!
-`status_transacao`= payment status set the status to `2` if the purchase is approved!
+just configure your store's payment system according to this table:<br>
+`uuid`= purchase identification.<br>
+`nick`= the Nick of the player who made the purchase.<br>
+`id_pacote`= Product ID!<br>
+`data_transacao`= date the individual made the purchase!<br>
+`status_transacao`= payment status set the status to `2` if the purchase is approved!<br>
 
 Well if you are a `back-end` Developer I'm sure you managed to do it!
