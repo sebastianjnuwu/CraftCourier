@@ -78,4 +78,4 @@ just configure your store's payment system according to this table:<br>
 `data_transacao` = date the individual made the purchase!<br>
 `status_transacao` = payment status set the status to `2` if the purchase is approved!<br>
 
-if you're a back-end developer, you've got it, if you're not, have someone do it or buy it from a store with this system!
+thanks to the people who contributed to this plugin working!
