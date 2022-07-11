@@ -55,27 +55,3 @@ mensagem: ""
  commands:
  - dar @player produto
 ```
-
-# 🔗 developers
-
- For the plugin to work you need to have a virtual store you can buy by clicking [here](https://discord.com/users/932678185970192404) or create your own, then we will teach you how to integrate your store in our plugin!
- 
- the plugin delivers the products with the transaction status equal to `2` (approved purchase) and then immediately deletes this purchase from the database and sends the message via webhook for discord, See the table below:
- ```js
- CREATE TABLE `transacao` (
-  `uuid` char(13) NOT NULL,
-  `nick` varchar(16) DEFAULT NULL,
-  `id_pacote` int(11) DEFAULT NULL,
-  `data_transacao` timestamp NOT NULL DEFAULT current_timestamp(),
-  `status_transacao` int(1) DEFAULT NULL
-) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
-```
-
-just configure your store's payment system according to this table:<br>
-`uuid` = purchase identification.<br>
-`nick` = the Nick of the player who made the purchase.<br>
-`id_pacote` = Product ID!<br>
-`data_transacao` = date the individual made the purchase!<br>
-`status_transacao` = payment status set the status to `2` if the purchase is approved!<br>
-
-thanks to the people who contributed to this plugin working!
