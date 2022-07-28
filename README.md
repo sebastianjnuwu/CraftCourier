@@ -16,8 +16,6 @@
 
 # ⚙️ settings
 
-Download the plugin by clicking [on here](https://github.com/sebastianjnuwu/KettraShop/releases/tag/1.2), Soon after configure it on your server with the information of each item correctly!
-
 **1 -** For the plugin to work you need to put the correct information to connect to MySql!
 ```yml
 # conexao ao banco de dados
