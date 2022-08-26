@@ -54,7 +54,9 @@ public class Belly extends JavaPlugin {
   private void check() throws SQLException {
 
 	PreparedStatement check = con.prepareStatement("SELECT * FROM transaction WHERE nick = ? and status = '2'");
-		
+  
+  PreparedStatement sold = con.prepareStatement("UPDATE product SET product.sold = product.sold + 1 WHERE id_product = ?");
+  
   PreparedStatement delete = con.prepareStatement("DELETE FROM transaction WHERE uuid = ?");
   
   PreparedStatement log = con.prepareStatement("INSERT INTO `historic` (`uuid`, `nick`, `id_product`, `date`, `status`)"
@@ -70,7 +72,10 @@ public class Belly extends JavaPlugin {
 				String product = Integer.toString(productCode);
 			
 		if (getConfig().isList(product + ".commands")) {
-		    
+		
+		  sold.setInt(1, productCode);
+		  sold.executeUpdate();
+
 		  delete.setString(1, code);
 			delete.executeUpdate();
 		  
