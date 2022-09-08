@@ -8,8 +8,6 @@
   <a href="https://discord.gg/NDzFeDp8YE"><img src="https://discordapp.com/api/guilds/893997835412971570/widget.png"></a>
 </p>
 
-**📭 Discord:** `SEBASTIANJN#7879`
-
 # 📊 Bstats
 
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
