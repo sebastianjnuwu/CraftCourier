@@ -16,16 +16,16 @@ import org.bukkit.scheduler.BukkitRunnable;
 
 public class Belly extends JavaPlugin {
     
-    private Connection con;
+  private Connection con;
     
   @Override
   public void onEnable() {
 		
-		int pluginId = 15226; 
-    Metrics metrics = new Metrics(this, pluginId);
+  int pluginId = 15226; 
+  Metrics metrics = new Metrics(this, pluginId);
         
-    saveDefaultConfig();
-	  reloadConfig();
+  saveDefaultConfig();
+	reloadConfig();
        
   getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §aPlugin connected successfully!");
       
@@ -53,14 +53,11 @@ public class Belly extends JavaPlugin {
     
   private void check() throws SQLException {
 
-	PreparedStatement check = con.prepareStatement("SELECT * FROM transaction WHERE nick = ? and status = '2'");
+	PreparedStatement check = con.prepareStatement("SELECT * FROM transaction WHERE nick = ? and status = '3'");
   
   PreparedStatement sold = con.prepareStatement("UPDATE product SET product.sold = product.sold + 1 WHERE id_product = ?");
   
-  PreparedStatement delete = con.prepareStatement("DELETE FROM transaction WHERE uuid = ?");
-  
-  PreparedStatement log = con.prepareStatement("INSERT INTO `historic` (`uuid`, `nick`, `id_product`, `date`, `status`)"
-				+ " VALUES (?, ?, ?, ?, 2)");
+  PreparedStatement update = con.prepareStatement("UPDATE transaction SET status = '4' WHERE transaction.uuid = ?");
 
     for (Player p : Bukkit.getOnlinePlayers()) {
 			check.setString(1, p.getName());
@@ -76,15 +73,9 @@ public class Belly extends JavaPlugin {
 		  sold.setInt(1, productCode);
 		  sold.executeUpdate();
 
-		  delete.setString(1, code);
-			delete.executeUpdate();
+		  update.setString(1, code);
+			update.executeUpdate();
 		  
-		  log.setString(1, code);
-		  log.setString(2, p.getName());
-	  	log.setInt(3, productCode);
-			log.setTimestamp(4, new Timestamp(System.currentTimeMillis()));
-			log.executeUpdate();
-					
    p.sendMessage(getConfig().getString("mensagem").replaceAll("&", "§").replaceAll("@player", p.getName()));
    
    DiscordWebhook webhook = new DiscordWebhook(getConfig().getString("webhook.url"));
