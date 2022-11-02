@@ -1,6 +1,6 @@
 name: KettraShop
-version: 1.5-SNAPSHORT
-api-version: 1.17
+version: 1.6-SNAPSHORT
+api-version: 1.18
 main: io.kettra.plugins.belly.Belly
 author: sebastianjnuwu
 website: https://github.com/sebastianjnuwu/KettraShop

@@ -1,6 +1,6 @@
 #################################################################
  # configuration:
- # https://github.com/sebastianjnuwu/KettraShop/releases/tag/1.2
+ # https://github.com/sebastianjnuwu/KettraShop
 #################################################################
 
 # database connection 
@@ -12,11 +12,6 @@ MySQL:
 
 # time settings to do mysql fetch!
 tempo: 5
-
-# Discord webhook notification (required)
-webhook:
-       url: ""
-       mensagem: ""
 
 # message in chat to the player who made the purchase!
 mensagem: ""

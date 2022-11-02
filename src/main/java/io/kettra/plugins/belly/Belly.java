@@ -1,6 +1,5 @@
 package io.kettra.plugins.belly;
 
-import io.kettra.plugins.belly.discord.DiscordWebhook;
 import java.sql.Connection;
 import java.sql.DriverManager;
 import java.sql.PreparedStatement;
@@ -13,7 +12,6 @@ import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
-
 public class Belly extends JavaPlugin {
     
   private Connection con;
@@ -21,8 +19,8 @@ public class Belly extends JavaPlugin {
   @Override
   public void onEnable() {
 		
-  int pluginId = 15226; 
-  Metrics metrics = new Metrics(this, pluginId);
+  int Id = 15226; 
+  Metrics metrics = new Metrics(this, Id);
         
   saveDefaultConfig();
 	reloadConfig();
@@ -78,14 +76,6 @@ public class Belly extends JavaPlugin {
 		  
    p.sendMessage(getConfig().getString("mensagem").replaceAll("&", "§").replaceAll("@player", p.getName()));
    
-   DiscordWebhook webhook = new DiscordWebhook(getConfig().getString("webhook.url"));
-   webhook.setContent(getConfig().getString("webhook.mensagem").replaceAll("@player", p.getName()));
-   
-      try {
-                webhook.execute();
-            } catch (Exception e) {
-                getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- " + e);
-            }
 		new BukkitRunnable() {	
 			@Override
 			public void run() {
