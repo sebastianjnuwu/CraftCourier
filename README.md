@@ -37,8 +37,6 @@ mensagem: ""
 ```
 
 **4 -** following this same configuration for the other products: id, command! (@player is the buyer's name)
-**4 -** following this same configuration for the other products: id, command! (@player is the buyer's name)
-**4 -** following this same configuration for the other products: id, command! (@player is the buyer's name)
 ```yml
 # produto id,commandos
 1:
