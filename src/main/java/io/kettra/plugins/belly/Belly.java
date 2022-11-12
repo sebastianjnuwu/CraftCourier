@@ -55,7 +55,7 @@ public class Belly extends JavaPlugin {
   
   PreparedStatement sold = con.prepareStatement("UPDATE product SET product.sold = product.sold + 1 WHERE id_product = ?");
   
-  PreparedStatement update = con.prepareStatement("UPDATE transaction SET notify = '2', status = '4' WHERE transaction.uuid = ?");
+  PreparedStatement update = con.prepareStatement("UPDATE transaction SET notify = '1', status = '4' WHERE transaction.uuid = ?");
 
     for (Player p : Bukkit.getOnlinePlayers()) {
 			check.setString(1, p.getName());
