@@ -13,9 +13,6 @@ MySQL:
 # time settings to do mysql fetch!
 tempo: 5
 
-# message in chat to the player who made the purchase!
-mensagem: ""
-
 # product id, commands
 1:
  commands:

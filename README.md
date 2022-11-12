@@ -12,34 +12,3 @@
 
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
 
-# ⚙️ settings
-
-**1 -** For the plugin to work you need to put the correct information to connect to MySql!
-```yml
-# conexao ao banco de dados
-MySQL:
-  host: ""
-  usuario: ""
-  senha: ""
-  database: ""
-```
-
-**2 -** time to search for new approved purchases, recommended to be more than 5 minutes!
-```yml
-# configurações de tempo para fazer a busca no mysql!
-tempo: 5
-```
-
-**3 -** the message that appears in the chat only for the player who made the purchase! (@player is the buyer's name)
-```yml
-# mensagem no chat que aparecera apenas para o jogador que fez a compra!
-mensagem: ""
-```
-
-**4 -** following this same configuration for the other products: id, command! (@player is the buyer's name)
-```yml
-# produto id,commandos
-1:
- commands:
- - dar @player produto
-```
