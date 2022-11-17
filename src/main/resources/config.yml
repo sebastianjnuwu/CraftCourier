@@ -1,7 +1,7 @@
-#################################################################
+############################
  # configuration:
  # https://github.com/sebastianjnuwu/KettraShop
-#################################################################
+############################
 
 # database connection 
 MySQL:
@@ -16,4 +16,4 @@ tempo: 5
 # product id, commands
 1:
  commands:
- - dar @player produto 
+ - give @player stone
