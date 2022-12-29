@@ -17,3 +17,19 @@ tempo: 5
 1:
  commands:
  - give @player stone
+
+2:
+ commands:
+ - give @player stone
+
+3:
+ commands:
+ - give @player stone
+
+4:
+ commands:
+ - give @player stone
+
+5:
+ commands:
+ - give @player stone

@@ -7,6 +7,7 @@ import java.sql.ResultSet;
 import java.sql.Timestamp;
 import java.sql.SQLException;
 import org.bukkit.Bukkit;
+import org.bukkit.chatcolor; 
 import org.bukkit.entity.Player;
 import org.bstats.bukkit.Metrics;
 import org.bukkit.plugin.java.JavaPlugin;
@@ -24,16 +25,16 @@ public class Belly extends JavaPlugin {
         
   saveDefaultConfig();
 	reloadConfig();
-       
-  getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §aPlugin connected successfully!");
       
     try {
            
   con = DriverManager.getConnection("jdbc:mysql://" + getConfig().getString("MySQL.host") + "/" + getConfig().getString("MySQL.database"), getConfig().getString("MySQL.usuario"), getConfig().getString("MySQL.senha"));
 
+ getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&a✧ Conectado no cluster"));
+ 
   } catch (SQLException e) {
-  getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §cCould not connect to MySQL: " + e.getMessage());
-   setEnabled(true);
+  getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&c✧ Ocorreu um erro ao connectar ao cluster: " + e.getMessage()));
+   setEnabled(false);
    return;
  }
       
@@ -51,11 +52,11 @@ public class Belly extends JavaPlugin {
     
   private void check() throws SQLException {
 
-	PreparedStatement check = con.prepareStatement("SELECT * FROM transaction WHERE nick = ? and status = '3'");
+	PreparedStatement check = con.prepareStatement("SELECT * FROM TRANSACTIONs WHERE nick = ? and status = '3'");
   
-  PreparedStatement sold = con.prepareStatement("UPDATE product SET product.sold = product.sold + 1 WHERE id_product = ?");
+  PreparedStatement sold = con.prepareStatement("UPDATE PRODUCTs SET PRODUCTs.sold = PRODUCTs.sold + 1 WHERE id_product = ?");
   
-  PreparedStatement update = con.prepareStatement("UPDATE transaction SET notify = '1', status = '4' WHERE transaction.uuid = ?");
+  PreparedStatement update = con.prepareStatement("UPDATE TRANSACTIONs SET notify = '2', status = '4' WHERE TRANSACTIONs.uuid = ?");
 
     for (Player p : Bukkit.getOnlinePlayers()) {
 			check.setString(1, p.getName());
@@ -91,6 +92,6 @@ public class Belly extends JavaPlugin {
     @Override
     public void onDisable() {
    
-        getServer().getConsoleSender().sendMessage("§f[Ket§btr§ca§aSh§bop§f] §f- §cPlugin successfully disconnected!");
+   getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&r&b&l☽ &r&b&lK&r&b&le&r&b&lt&r&b&lt&r&f&lr&r&f&la&r&f&lW&r&7&lo&r&7&lr&r&d&ll&r&5&ld &r&5&lﾠ&c✧ Disconectado do cluster!"));
     }
 }
