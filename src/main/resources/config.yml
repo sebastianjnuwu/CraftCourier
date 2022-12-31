@@ -1,35 +1,42 @@
-############################
- # configuration:
- # https://github.com/sebastianjnuwu/KettraShop
-############################
+# settings 
 
-# database connection 
+# MySql connection information
 MySQL:
-  host: ""
-  usuario: ""
-  senha: ""
-  database: ""
+   host: ''
+   password: ''
+   user: ''
+   database: ''
 
-# time settings to do mysql fetch!
-tempo: 5
+# time to search for approved purchase (m)
+time: 5
 
-# product id, commands
+# commands to be executed according to the product
 1:
+ # inventory: false
  commands:
- - give @player stone
+ - ouro enviar @player 75
+ - say @player lol!
 
 2:
+ # inventory: false
  commands:
- - give @player stone
+ - ouro enviar @player 3500
+ - say @player lol!
 
 3:
+ # inventory: false
  commands:
- - give @player stone
+ - ouro enviar @player 10000
+ - say @player lol!
 
 4:
+ # inventory: false
  commands:
- - give @player stone
+ - ouro enviar @player 15000
+ - say @player lol!
 
 5:
+ # inventory: false
  commands:
- - give @player stone
+ - ouro enviar @player 20000
+ - say @player lol!

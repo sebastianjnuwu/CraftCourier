@@ -1,7 +1,6 @@
 name: KettraShop
-version: 1.8-SNAPSHORT
+version: 1.1.9
 api-version: 1.18
-main: io.kettra.plugins.belly.Belly
-author: sebastianjnuwu
-website: https://github.com/sebastianjnuwu/KettraShop
-description: product activation plugin inside minecraft!
+main: kettraworld.com.Kw
+author: sebastianjnuwu 
+website: kettraworld.shop
