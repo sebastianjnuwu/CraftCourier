@@ -1,6 +1,7 @@
 name: KettraShop
-version: 1.1.9
+version: 1.2.1
 api-version: 1.18
 main: kettraworld.com.Kw
 author: sebastianjnuwu 
+description: "Delivery of the products compared in the store."
 website: kettraworld.shop

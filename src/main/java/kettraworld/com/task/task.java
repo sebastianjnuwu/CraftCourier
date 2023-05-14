@@ -15,11 +15,9 @@ public class task {
   
  public task() throws SQLException {
 
-	PreparedStatement check = con.prepareStatement("SELECT * FROM TRANSACTIONs WHERE nick = ? and status = '3'");
+	PreparedStatement check = con.prepareStatement("SELECT * FROM TRANSACTIONs WHERE nick = ? and status = '1'");
   
-  PreparedStatement sold = con.prepareStatement("UPDATE PRODUCTs SET PRODUCTs.sold = PRODUCTs.sold + 1 WHERE id_product = ?");
-  
-  PreparedStatement update = con.prepareStatement("UPDATE TRANSACTIONs SET notify = '2', status = '4' WHERE TRANSACTIONs.uuid = ?");
+  PreparedStatement update = con.prepareStatement("UPDATE TRANSACTIONs SET status = '3' WHERE TRANSACTIONs.uuid = ?");
 
     for (Player p : Bukkit.getOnlinePlayers()) {
 			check.setString(1, p.getName());
@@ -31,9 +29,6 @@ public class task {
 				String product = Integer.toString(productCode);
 			
 		if (Kw.I().getConfig().isList(product + ".commands")) {
-		
-		  sold.setInt(1, productCode);
-		  sold.executeUpdate();
 
 		  update.setString(1, code);
 			update.executeUpdate();
