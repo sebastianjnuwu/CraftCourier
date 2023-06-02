@@ -28,21 +28,29 @@ public class task {
 				int productCode = rs.getInt("id_product");
 				String product = Integer.toString(productCode);
 			
-		if (Kw.I().getConfig().isList(product + ".commands")) {
+	 if (Kw.I().getConfig().isList(product + ".commands")) {
+	   
+    boolean inventoryFull = p.getInventory().firstEmpty() == -1;
+    
+    boolean inventoryFlag = Kw.I().getConfig().getBoolean(product + ".inventory");
 
-		  update.setString(1, code);
-			update.executeUpdate();
-		  
-		new BukkitRunnable() {	
-			@Override
-			public void run() {
-					for (String cmd : Kw.I().getConfig().getStringList(product + ".commands")) {
-						Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replace("@player", p.getName()));
-					}
-				}	
-			
-				}.runTaskLater(Kw.I(), 1L);
-			}
+  if (inventoryFlag && inventoryFull) {
+    p.sendMessage("Seu inventário está cheio! Não foi possível executar a compra.");
+        
+    } else {
+        update.setString(1, code);
+        update.executeUpdate();
+
+        new BukkitRunnable() {
+            @Override
+            public void run() {
+                for (String cmd : Kw.I().getConfig().getStringList(product + ".commands")) {
+                    Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replace("@player", p.getName()));
+                }
+            }
+        }.runTaskLater(Kw.I(), 1L);
+    }
+}
 		}
     }
  }

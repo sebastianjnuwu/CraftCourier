@@ -12,31 +12,31 @@ time: 5
 
 # commands to be executed according to the product
 1:
- # inventory: false
+ inventory: false
  commands:
  - ouro enviar @player 75
  - say @player lol!
 
 2:
- # inventory: false
+ inventory: false
  commands:
  - ouro enviar @player 3500
  - say @player lol!
 
 3:
- # inventory: false
+ inventory: false
  commands:
  - ouro enviar @player 10000
  - say @player lol!
 
 4:
- # inventory: false
+ inventory: false
  commands:
  - ouro enviar @player 15000
  - say @player lol!
 
 5:
- # inventory: false
+ inventory: false
  commands:
  - ouro enviar @player 20000
  - say @player lol!
