@@ -1,42 +1,26 @@
 # settings 
+# @player is a placeholder for player name!
+# @product is a placeholder for product name!
 
 # MySql connection information
 MySQL:
-   host: ''
-   password: ''
-   user: ''
-   database: ''
+   host: 'database_host'
+   password: 'database_password'
+   user: 'database_user'
+   database: 'database_name'
 
 # time to search for approved purchase (m)
 time: 5
 
+# personalized messages
+message:
+ inventory: "&cYour inventory is full! Unable to deliver your product."
+
 # commands to be executed according to the product
 1:
+ name: "product_name"
  inventory: false
+ message: "&a you received @product!"
  commands:
- - ouro enviar @player 75
  - say @player lol!
-
-2:
- inventory: false
- commands:
- - ouro enviar @player 3500
- - say @player lol!
-
-3:
- inventory: false
- commands:
- - ouro enviar @player 10000
- - say @player lol!
-
-4:
- inventory: false
- commands:
- - ouro enviar @player 15000
- - say @player lol!
-
-5:
- inventory: false
- commands:
- - ouro enviar @player 20000
- - say @player lol!
+ - say plugin lol!

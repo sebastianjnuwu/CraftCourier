@@ -4,6 +4,7 @@ import org.bukkit.Bukkit;
 import kettraworld.com.Kw;
 import java.sql.ResultSet;
 import java.sql.Connection;
+import org.bukkit.ChatColor;
 import java.sql.SQLException;
 import org.bukkit.entity.Player;
 import java.sql.PreparedStatement;
@@ -35,7 +36,7 @@ public class task {
     boolean inventoryFlag = Kw.I().getConfig().getBoolean(product + ".inventory");
 
   if (inventoryFlag && inventoryFull) {
-    p.sendMessage("Seu inventário está cheio! Não foi possível executar a compra.");
+    p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString("message.inventory")));
         
     } else {
         update.setString(1, code);
@@ -44,7 +45,11 @@ public class task {
         new BukkitRunnable() {
             @Override
             public void run() {
+              
+    p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString(product + ".message").replace("@product", Kw.I().getConfig().getString(product + ".name"))));
+      
                 for (String cmd : Kw.I().getConfig().getStringList(product + ".commands")) {
+                  
                     Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replace("@player", p.getName()));
                 }
             }
