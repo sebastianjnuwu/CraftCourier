@@ -6,6 +6,8 @@ import org.bukkit.ChatColor;
 import org.bstats.bukkit.Metrics;
 import kettraworld.com.database.MySQL;
 import kettraworld.com.task.task;
+import club.minnced.discord.webhook.WebhookClient;
+import club.minnced.discord.webhook.send.WebhookMessageBuilder;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -45,6 +47,15 @@ public class Kw extends JavaPlugin {
   
   }
   
+  public void sendDiscordMessage(String message) {
+
+ WebhookClient client = WebhookClient.withUrl(getConfig().getString("webhook.url"));
+  
+ WebhookMessageBuilder Message = new WebhookMessageBuilder().setContent(message);
+
+   client.send(Message.build());
+ }
+    
    public static Kw I(){
         return plugin;
     }

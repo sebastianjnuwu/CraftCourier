@@ -13,6 +13,12 @@ MySQL:
 # time to search for approved purchase (m)
 time: 5
 
+# send notification to Discord 
+webhook:
+ enable: false
+ message: ""
+ url: ""
+ 
 # personalized messages
 message:
  inventory: "&cYour inventory is full! Unable to deliver your product."

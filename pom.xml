@@ -4,7 +4,7 @@
   <modelVersion>4.0.0</modelVersion>
   <groupId>kettraworld.com</groupId>
   <artifactId>KettraShop</artifactId>
-  <version>1.2.2</version>
+  <version>1.2.3-SNAPSHORT</version>
    <name>KettraShop</name>
 
   <properties>
@@ -76,6 +76,11 @@
              <version>1.17.1-R0.1-SNAPSHOT</version>
             <scope>provided</scope>
         </dependency>
+        <dependency>
+    <groupId>club.minnced</groupId>
+    <artifactId>discord-webhooks</artifactId>
+    <version>0.5.4</version>
+</dependency>
            <dependency>
   <groupId>org.bstats</groupId>
   <artifactId>bstats-bukkit</artifactId>

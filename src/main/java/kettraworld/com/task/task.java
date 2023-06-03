@@ -45,8 +45,14 @@ public class task {
         new BukkitRunnable() {
             @Override
             public void run() {
-              
+   
+   boolean webhook = Kw.I().getConfig().getBoolean("webhook.enable");
+   
     p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString(product + ".message").replace("@product", Kw.I().getConfig().getString(product + ".name"))));
+    
+  if (webhook) {
+    Kw.I().sendDiscordMessage(Kw.I().getConfig().getString("webhook.message").replace("@product", Kw.I().getConfig().getString(product + ".name")).replace("@player", p.getName()));
+    }
       
                 for (String cmd : Kw.I().getConfig().getStringList(product + ".commands")) {
                   
