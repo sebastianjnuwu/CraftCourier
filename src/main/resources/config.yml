@@ -1,6 +1,7 @@
 # settings 
 # @player is a placeholder for player name!
 # @product is a placeholder for product name!
+# & exists to color the messages 
 
 # MySql connection information
 MySQL:

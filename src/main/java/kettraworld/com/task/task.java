@@ -36,7 +36,7 @@ public class task {
     boolean inventoryFlag = Kw.I().getConfig().getBoolean(product + ".inventory");
 
   if (inventoryFlag && inventoryFull) {
-    p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString("message.inventory")));
+    p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString("message.inventory").replace("@product", Kw.I().getConfig().getString(product + ".name"))));
         
     } else {
         update.setString(1, code);
