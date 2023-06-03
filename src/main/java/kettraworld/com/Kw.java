@@ -6,8 +6,6 @@ import org.bukkit.ChatColor;
 import org.bstats.bukkit.Metrics;
 import kettraworld.com.database.MySQL;
 import kettraworld.com.task.task;
-import club.minnced.discord.webhook.WebhookClient;
-import club.minnced.discord.webhook.send.WebhookMessageBuilder;
 import org.bukkit.plugin.java.JavaPlugin;
 import org.bukkit.scheduler.BukkitRunnable;
 
@@ -46,15 +44,6 @@ public class Kw extends JavaPlugin {
    getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&r&b&l☽ &r&b&lK&r&b&le&r&b&lt&r&b&lt&r&f&lr&r&f&la&r&f&lW&r&7&lo&r&7&lr&r&d&ll&r&5&ld &r&5&lﾠ&c✧ Disconectado do cluster!"));
   
   }
-  
-  public void sendDiscordMessage(String message) {
-
- WebhookClient client = WebhookClient.withUrl(getConfig().getString("webhook.url"));
-  
- WebhookMessageBuilder Message = new WebhookMessageBuilder().setContent(message);
-
-   client.send(Message.build());
- }
     
    public static Kw I(){
         return plugin;

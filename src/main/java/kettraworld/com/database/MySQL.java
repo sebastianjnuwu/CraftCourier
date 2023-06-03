@@ -23,11 +23,11 @@ public class MySQL {
  
    connection = DriverManager.getConnection("jdbc:mysql://" + host + "/" + db, user, pass);
  
-   Kw.I().getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&a✧ Conectado no cluster"));
+   Kw.I().getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&a✧ Connected in a cluster"));
  
   } catch(SQLException e) {
   
-   Kw.I().getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&c✧ Ocorreu um erro ao connectar ao cluster: " + e.getMessage()));
+   Kw.I().getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&c✧ An error occurred while connecting to the cluster: " + e.getMessage()));
   }
  }
  
