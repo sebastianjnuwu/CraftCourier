@@ -32,7 +32,7 @@ public class Kw extends JavaPlugin {
 		  	new task();
 		 getServer().getConsoleSender().sendMessage(ChatColor.translateAlternateColorCodes('&', "&r&b&l☽ &r&b&lK&r&b&le&r&b&lt&r&b&lt&r&f&lr&r&f&la&r&f&lW&r&7&lo&r&7&lr&r&d&ll&r&5&ld &r&5&lﾠ&a✧ Executing task " + (n.nextInt(1000) + 1) * 3));
     	} catch (Exception e) {
-					getLogger().severe(" • houve um erro: " + e.getMessage());
+					getLogger().severe(" • there was an error: " + e.getMessage());
 				}
 			}
 		}.runTaskTimerAsynchronously(this, getConfig().getInt("time") * 1200L, getConfig().getInt("time") * 1200L);
