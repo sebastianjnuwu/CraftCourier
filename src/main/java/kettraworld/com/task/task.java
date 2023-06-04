@@ -50,13 +50,13 @@ public class task {
               public void run() {
 
                 p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString(product + ".message").replace("@product", Kw.I().getConfig().getString(product + ".name"))));
+                
+              p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
 
-                Hook webhook = new Hook();
-                webhook.SendHook(Kw.I().getConfig().getString("webhook.message").replace("@product", Kw.I().getConfig().getString(product + ".name")).replace("@player", p.getName()));
+                Hook.sendHook(Kw.I().getConfig().getString("webhook.message").replace("@product", Kw.I().getConfig().getString(product + ".name")).replace("@player", p.getName()));
+               
 
                 for (String cmd: Kw.I().getConfig().getStringList(product + ".commands")) {
-
-                  p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
 
                   Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replace("@player", p.getName()));
                 }
