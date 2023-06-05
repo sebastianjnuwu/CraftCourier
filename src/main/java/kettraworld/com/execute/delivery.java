@@ -1,22 +1,21 @@
-package kettraworld.com.task;
+package kettraworld.com.execute;
 
 import org.bukkit.Sound;
 import org.bukkit.Bukkit;
 import kettraworld.com.Kw;
 import java.sql.ResultSet;
 import java.sql.Connection;
-import org.bukkit.ChatColor;
 import java.sql.SQLException;
 import org.bukkit.entity.Player;
+import kettraworld.com.util.Util;
 import java.sql.PreparedStatement;
-import kettraworld.com.webhook.Hook;
 import org.bukkit.scheduler.BukkitRunnable;
 
-public class task {
+public class delivery {
 
-  Connection con = Kw.I().sql.MySQL();
+  Connection con = Kw.getPlugin().getMySQL().getConnection();
 
-  public task() throws SQLException {
+  public delivery() throws SQLException {
 
     PreparedStatement check = con.prepareStatement("SELECT * FROM TRANSACTIONs WHERE nick = ? and status = '1'");
 
@@ -31,15 +30,15 @@ public class task {
         int productCode = rs.getInt("id_product");
         String product = Integer.toString(productCode);
 
-        if (Kw.I().getConfig().isList(product + ".commands")) {
+        if (Kw.getPlugin().getConfig().isList(product + ".commands")) {
 
           boolean inventoryFull = p.getInventory().firstEmpty() == -1;
 
-          boolean inventoryFlag = Kw.I().getConfig().getBoolean(product + ".inventory");
+          boolean inventoryFlag = Kw.getPlugin().getConfig().getBoolean(product + ".inventory");
 
           if (inventoryFlag && inventoryFull) {
             p.playSound(p.getLocation(), Sound.ENTITY_VILLAGER_NO, 1.0f, 1.0f);
-            p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString("message.inventory").replace("@product", Kw.I().getConfig().getString(product + ".name"))));
+            p.sendMessage(Util.Cor(Kw.getPlugin().getConfig().getString("message.inventory").replace("@product", Kw.getPlugin().getConfig().getString(product + ".name"))));
 
           } else {
             update.setString(1, code);
@@ -49,19 +48,19 @@ public class task {
               @Override
               public void run() {
 
-                p.sendMessage(ChatColor.translateAlternateColorCodes('&', Kw.I().getConfig().getString(product + ".message").replace("@product", Kw.I().getConfig().getString(product + ".name"))));
-                
-              p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
+                p.sendMessage(Util.Cor(Kw.getPlugin().getConfig().getString(product + ".message").replace("@product", Kw.getPlugin().getConfig().getString(product + ".name"))));
 
-                Hook.sendHook(Kw.I().getConfig().getString("webhook.message").replace("@product", Kw.I().getConfig().getString(product + ".name")).replace("@player", p.getName()));
-               
+                p.playSound(p.getLocation(), Sound.ENTITY_PLAYER_LEVELUP, 1.0f, 1.0f);
 
-                for (String cmd: Kw.I().getConfig().getStringList(product + ".commands")) {
+                Util.sendHook(Kw.getPlugin().getConfig().getString("webhook.message").replace("@product", Kw.getPlugin().getConfig().getString(product + ".name")).replace("@player", p.getName()));
+
+
+                for (String cmd: Kw.getPlugin().getConfig().getStringList(product + ".commands")) {
 
                   Bukkit.dispatchCommand(Bukkit.getConsoleSender(), cmd.replace("@player", p.getName()));
                 }
               }
-            }.runTaskLater(Kw.I(), 1L);
+            }.runTaskLater(Kw.getPlugin(), 1L);
           }
         }
       }
