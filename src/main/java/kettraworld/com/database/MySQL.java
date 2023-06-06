@@ -24,10 +24,10 @@ public class MySQL {
 
       connection = DriverManager.getConnection("jdbc:mysql://" + host + "/" + db, user, pass);
 
-      Util.Console("§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&a✧ Connected to the MySQL cluster");
+      Util.Console("§r§b§l☽ KettraShop &r§r§b§l✡ﾠ&a✧ Connected to the MySQL cluster");
 
     } catch (SQLException e) {
-      Util.Console("§r§b§l☽ §r§b§lK§r§b§le§r§b§lt§r§b§lt§r§f§lr§r§f§la§r§f§lW§r§7§lo§r§7§lr§r§d§ll§r§5§ld §r§5§lﾠ&c✧ An error occurred while connecting to the MySQL cluster => " + e.getMessage());
+      Util.Console("§r§b§l☽ KettraShop &r§r§b§l✡ﾠ&c✧ An error occurred while connecting to the MySQL cluster => " + e.getMessage());
     }
   }
 

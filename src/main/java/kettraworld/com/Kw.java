@@ -17,6 +17,9 @@ public class Kw extends JavaPlugin {
     plugin = this;
     saveDefaultConfig();
     reloadConfig();
+    
+  Util.Console("§r§b§l☽ KettraShop &r§r§b§l✡");
+    
     Metrics metrics = new Metrics(this, 15226);
     int delay = getConfig().getInt("time") * 1200;
     getCommand("kw").setExecutor(new Reload());
@@ -29,11 +32,10 @@ public class Kw extends JavaPlugin {
         try {
 
          new delivery();
-          Util.Console("&r&b&l☽ &r&b&lK&r&b&le&r&b&lt&r&b&lt&r&f&lr&r&f&la&r&f&lW&r&7&lo&r&7&lr&r&d&ll&r&5&ld " +
-            "&r&5&lﾠ&a✧ Executing a new quest...");
+          Util.Console("§r§b§l☽ KettraShop &r§r§b§l✡ &a✧ Executing a new quest...");
 
         } catch (Exception e) {
-          Util.Console("&cThere was an error => " + e.getMessage());
+          Util.Console("§r§b§l☽ KettraShop &r§r§b§l✡ &c✧ There was an error => " + e.getMessage());
         }
       }
     }.runTaskTimerAsynchronously(this, delay, delay);
@@ -41,9 +43,9 @@ public class Kw extends JavaPlugin {
 
   @Override
   public void onDisable() {
-    Util.Console("&r&b&l☽ &r&b&lK&r&b&le&r&b&lt&r&b&lt&r&f&lr&r&f&la&r&f&lW&r&7&lo&r&7&lr&r&d&ll&r&5&ld &r&5&lﾠ&c✧ disconnected from cluster");
-    mysql.disconnect();
-  }
+   Util.Console("§r§b§l☽ KettraShop &r§r§b§l✡ﾠ&c✧ disconnected from cluster");
+   mysql.disconnect();
+ }
 
   public static Kw getPlugin() {
     return plugin;
