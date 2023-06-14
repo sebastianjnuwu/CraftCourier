@@ -18,7 +18,39 @@
 </p>
 <div>
 
+## 📖 About
 
-# 📊 Bstats
+ <b>Kettra Shop</b> is a plugin capable of searching for <i>approved</i> purchases and executing commands to deliver products to the configured server.
+ 
+ <b>• Defining the mysql connection:</b> It is important to note that the mysql settings like tables and columns must be correct and linked in the backend (virtual store), fill in the settings correctly in `config.yml`
+ 
+ ```yml
+ # MySql connection information
+MySQL:
+   host: 'database_host'
+   password: 'database_password'
+   user: 'database_user'
+   database: 'database_name'
+ ```
+ 
+ <b>• Configuring fetch time:</b> This search time is essential as it will check the name of each player online, the appropriate time would be at least 2 minutes.
+ 
+ ```yml
+ # time to search for approved purchase (m)
+time: 2 # minutes
+ ```
+ 
+ <b>• configuring the product:</b> each number is the product identification id that must be configured both in the plugin and in the backend (virtual store)
+ 
+ ```yml
+ 1:
+ name: "product_name"
+ inventory: false
+ message: "&a you received @product!"
+ commands:
+ - say @player lol!
+ ```
+
+## 📊 Bstats
 
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
