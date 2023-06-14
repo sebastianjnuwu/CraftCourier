@@ -7,5 +7,5 @@ description: "Delivery of the products compared in the store."
 website: www.kettraworld.shop
 commands:
   kw:
-    description: Comando usado no plugin KettraShop
+    description: Command used no KettraShop plugin
     usage: /kw <subcomando>
