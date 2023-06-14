@@ -53,7 +53,7 @@ webhook:
  message: "" # message to discord 
  url: "" #  webhook discord 
  ```
- <strong> • Customize messages:</strong> To make the plugin more customized, don't forget to configure the messages
+ <strong>• Customize messages:</strong> To make the plugin more customized, don't forget to configure the messages
  
  ```yml
  # personalized messages
@@ -73,6 +73,42 @@ message:
  commands:
  - say @player lol!
  ```
+ 
+ ### 🏷️ integration 
+ 
+ Integrate your store with a plugin through sequelize or something similar. Pay attention to the status and id of each product: 0 = purchase pending; 1 = approved purchase; 2 = purchase refused; 3 = purchase delivered and already approved 
+ 
+```js
+import Sequelize from 'sequelize';
+import { sequelize } from '#connect';
+
+const transaction = sequelize.define('TRANSACTION', {
+  uuid: {
+    type: Sequelize.STRING,
+    primaryKey: true,
+  },
+  nick: {
+    type: Sequelize.STRING,
+  },
+  email: {
+    type: Sequelize.STRING,
+  },
+  id_product: {
+    type: Sequelize.BIGINT(1),
+  },
+  status: {
+    type: Sequelize.BIGINT(1),
+  },
+  date: {
+    type: Sequelize.DATE,
+    defaultValue: Sequelize.NOW,
+  },
+});
+
+transaction.sync();
+
+export default transaction;
+```
  
 ## 📊 Bstats
 
