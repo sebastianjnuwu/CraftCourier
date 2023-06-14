@@ -53,7 +53,7 @@ webhook:
  message: "" # message to discord 
  url: "" #  webhook discord 
  ```
- <strong> • Customize messages:</b> To make the plugin more customized, don't forget to configure the messages
+ <strong> • Customize messages:</strong> To make the plugin more customized, don't forget to configure the messages
  
  ```yml
  # personalized messages
