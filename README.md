@@ -65,6 +65,15 @@ webhook:
  - say @player lol!
  ```
 
+## 💡 integration 
+ 
+| --- | ----- | ---------- |
+| 0 | pending | The purchase has not yet been paid |
+| 1 | approved | purchase was paid |
+| 2 | refused | compare was declined rejected |
+| 3 | he finished | the product has already been delivered |
+| --- | ----- | ---------- |
+ 
 ## 📊 Bstats
 
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
