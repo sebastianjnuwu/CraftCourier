@@ -76,7 +76,11 @@ message:
  
  ### 🏷️ integration 
  
- Integrate your store with a plugin through sequelize or something similar. Pay attention to the status and id of each product: 0 = purchase pending; 1 = approved purchase; 2 = purchase refused; 3 = purchase delivered and already approved 
+ Integrate your store with a plugin through sequelize or something similar. Attention to the `status` and `id_product` of each product: 
+ - `0` = purchase pending; 
+ - `1` = approved purchase; 
+ - `2` = purchase refused; 
+ - `3` = purchase delivered and already approved.
  
 ```js
 import Sequelize from 'sequelize';
@@ -87,16 +91,16 @@ const transaction = sequelize.define('TRANSACTION', {
     type: Sequelize.STRING,
     primaryKey: true,
   },
-  nick: {
+  nick: { // Player's name 
     type: Sequelize.STRING,
   },
   email: {
     type: Sequelize.STRING,
   },
-  id_product: {
+  id_product: { // Product id 
     type: Sequelize.BIGINT(1),
   },
-  status: {
+  status: { // Status to buy
     type: Sequelize.BIGINT(1),
   },
   date: {
