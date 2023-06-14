@@ -26,23 +26,23 @@
  
 ## 💡 Developer 
 
- If any developer wants to contribute, just open a [PR](). follow the steps below to be able to compile the plugin remember we are using Ubuntu below:
+ If any developer wants to contribute, just open a [PR](https://github.com/sebastianjnuwu/KettraShop/pulls). follow the steps below to be able to compile the plugin remember we are using Ubuntu below:
  
- • install github and maven: 
+ • Install github and maven: 
  ```bash
- apt install git maven -y
+ apt install git -y; apt install maven -y
  ```
  
- • clone the repository:
+ • Clone the repository:
  ```bash
- git clone https://github.com/sebastianjnuwu/KettraShop
+ git clone https://github.com/sebastianjnuwu/KettraShop && cd KettraShop
  ```
  
- • compile o plugin
+ • Compile o plugin
  ```bash
- cd KettraShop && mvn install 
+ mvn install 
  ```
 
-## 📊 Bstats
+# 📊 Bstats
 
 ![](https://bstats.org/signatures/bukkit/KettraShop.svg)
