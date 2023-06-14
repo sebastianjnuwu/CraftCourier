@@ -24,7 +24,9 @@
 
 ### ⚙️ config
  
- <b>• Defining the mysql connection:</b> It is important to note that the mysql settings like tables and columns must be correct and linked in the backend (virtual store), fill in the settings correctly in `config.yml`
+ See some explanations on how to configure the plugin on your server and then how to integrate it into your virtual store.
+ 
+ <strong>• Defining the mysql connection:</strong> It is important to note that the mysql settings like tables and columns must be correct and linked in the backend (virtual store), fill in the settings correctly in `config.yml`
  
  ```yml
  # MySql connection information
@@ -35,14 +37,24 @@ MySQL:
    database: 'database_name'
  ```
  
- <b>• Configuring fetch time:</b> This search time is essential as it will check the name of each player online, the appropriate time would be at least 2 minutes.
+ <strong>• Configuring fetch time:</strong> This search time is essential as it will check the name of each player online, the appropriate time would be at least 2 minutes.
  
  ```yml
  # time to search for approved purchase (m)
 time: 2 # minutes
  ```
  
- <b>• configuring the product:</b> each number is the product identification id that must be configured both in the plugin and in the backend (virtual store)
+ <strong>• Configure notification:</strong> configure your webhook to notify you in your discord when a product is delivered.
+ 
+ ```yml
+ # send notification to Discord 
+webhook:
+ enable: true # activated 
+ message: "" # message to discord 
+ url: "" #  webhook discord 
+ ```
+ 
+ <strong>• Configuring the product:</strong> each number is the product identification id that must be configured both in the plugin and in the backend (virtual store)
  
  ```yml
  1:
