@@ -53,6 +53,15 @@ webhook:
  message: "" # message to discord 
  url: "" #  webhook discord 
  ```
+ <strong> • Customize messages:</b> To make the plugin more customized, don't forget to configure the messages
+ 
+ ```yml
+ # personalized messages
+message:
+ inventory: "&cYour inventory is full! Unable to deliver your product."
+ reload: "&aPlugin reloaded successfully!"
+ permission: "&cYou do not have permission!"
+ ```
  
  <strong>• Configuring the product:</strong> each number is the product identification id that must be configured both in the plugin and in the backend (virtual store)
  
