@@ -22,7 +22,26 @@
 
  <b>Kettra Shop</b> is a plugin capable of searching for <i>approved</i> purchases and executing commands to deliver products to the configured server.
  
- - Download the plugin by clicking [here!](#)
+ - Download the plugin by clicking [here!](https://cdn.discordapp.com/attachments/1077666564880486503/1118618205284479086/KettraShop.jar)
+ 
+## 💡 Developer 
+
+ If any developer wants to contribute, just open a [PR](). follow the steps below to be able to compile the plugin remember we are using Ubuntu below:
+ 
+ • install github and maven: 
+ ```bash
+ apt install git maven -y
+ ```
+ 
+ • clone the repository:
+ ```bash
+ git clone https://github.com/sebastianjnuwu/KettraShop
+ ```
+ 
+ • compile o plugin
+ ```bash
+ cd KettraShop && mvn install 
+ ```
 
 ## 📊 Bstats
 
