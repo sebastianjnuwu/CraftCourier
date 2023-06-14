@@ -21,6 +21,8 @@
 ## 📖 About
 
  <b>Kettra Shop</b> is a plugin capable of searching for <i>approved</i> purchases and executing commands to deliver products to the configured server.
+
+### ⚙️ config
  
  <b>• Defining the mysql connection:</b> It is important to note that the mysql settings like tables and columns must be correct and linked in the backend (virtual store), fill in the settings correctly in `config.yml`
  
