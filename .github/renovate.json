@@ -3,7 +3,7 @@
   "extends": ["config:base"],
   "assignees": ["sebastianjnuwu"],
   "reviewers": ["sebastianjnuwu"],
-  "baseBranches": ["dev"],
+  "baseBranches": ["plugin"],
   "dependencyDashboard": false,
   "fetchReleaseNotes": true,
   "packageRules": [{
