@@ -1,11 +1,11 @@
 name: KettraShop
-version: 1.2.6
+version: 1.2.7-SNAPSHORT
 api-version: 1.18
 main: kettraworld.com.Kw
 author: sebastianjnuwu 
 description: "Delivery of the products compared in the store."
-website: www.kettraworld.shop
+website: https://github.com/sebastianjnuwu/KettraShop
 commands:
   kw:
     description: Command used no KettraShop plugin
-    usage: /kw <subcomando>
+    usage: /kw <reload|info>

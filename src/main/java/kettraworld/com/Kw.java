@@ -19,7 +19,8 @@ public class Kw extends JavaPlugin {
     reloadConfig();
     
   Util.Console("§r§b§l☽ KettraShop &r§r§b§l✡");
-    
+  Util.Update(getDescription().getVersion());
+  
     Metrics metrics = new Metrics(this, 15226);
     int delay = getConfig().getInt("time") * 1200;
     getCommand("kw").setExecutor(new Reload());
