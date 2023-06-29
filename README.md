@@ -22,7 +22,7 @@
 
  <b>Kettra Shop</b> is a plugin capable of searching for <i>approved</i> purchases and executing commands to deliver products to the configured server.
  
- - Download the plugin by clicking [here!](https://cdn.discordapp.com/attachments/1077666564880486503/1118618205284479086/KettraShop.jar)
+ - Download the plugin by clicking [here!](https://cdn.discordapp.com/attachments/1010559525436264458/1123932813608091729/KettraShop-1.2.7-SNAPSHORT.jar)
  
 ## 💡 Developer 
 
