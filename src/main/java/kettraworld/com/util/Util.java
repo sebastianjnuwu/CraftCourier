@@ -53,7 +53,7 @@ public class Util {
   
   String version = json.getString("version");
    
-   if (version == Version) {
+   if (version.equals(Version)) {
      Console("§r§b§l☽ KettraShop &r§r§b§l✡ &a✧ you are on the latest version!");
    } else {
      Console("§r§b§l☽ KettraShop &r§r§b§l✡ &a✧ New version available &e" + version);
