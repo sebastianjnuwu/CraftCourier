@@ -7,7 +7,7 @@
 
     <groupId>kettraworld.com</groupId>
     <artifactId>KettraShop</artifactId>
-    <version>1.2.7-SNAPSHORT</version>
+    <version>1.2.8</version>
     <name>KettraShop</name>
 
     <properties>
