@@ -5,6 +5,10 @@ on:
     branches:
       - plugin
 
+permissions:
+  contents: write
+  discussions: write
+  
 jobs:
   build:
     runs-on: ubuntu-latest
@@ -17,7 +21,7 @@ jobs:
           java-version: '17'
 
       - name: 🐦 Check out repository code
-        uses: actions/checkout@v4
+        uses: actions/checkout@v3
       - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       
@@ -28,4 +32,4 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
-          files: /target/KettraShop.jar
+          files: target/KettraShop.jar
