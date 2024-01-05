@@ -16,12 +16,6 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
-      - name: 🧠 Check out repository code
-        uses: actions/checkout@v4
-        run: |
-          echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
-          echo "🖥️ The workflow is now ready to build your Minecraft plugin."
-
       - name: 🔗 Build with Maven
         run: mvn clean install
 
