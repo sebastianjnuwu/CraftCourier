@@ -16,9 +16,12 @@ jobs:
           distribution: 'adopt'
           java-version: '17'
 
+      - name: 🐦 Check out repository code
+        uses: actions/checkout@v4
+      - run: echo "💡 The ${{ github.repository }} repository has been cloned to the runner."
+      - run: echo "🖥️ The workflow is now ready to test your code on the runner."
+      
       - name: 🔗 Build with Maven
-        run: ls
-        run: cd ${{ github.workspace }}
         run: ls
         run: mvn clean install
 
@@ -27,7 +30,3 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: target/KettraShop.jar
-
-      - name: 🐦 Display job status
-        run: echo "🍏 This job's status is ${{ job.status }}."
-        
