@@ -28,7 +28,7 @@ jobs:
         run: mvn install
 
       - name: 🛒 Release
-        if: startsWith(github.ref, 'refs/tags/')
+       # if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
           files: target/KettraShop.jar
