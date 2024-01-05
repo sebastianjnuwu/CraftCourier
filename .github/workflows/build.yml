@@ -22,7 +22,6 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       
       - name: 🔗 Build with Maven
-        run: ls
         run: mvn clean install
 
       - name: 🛒 Release
