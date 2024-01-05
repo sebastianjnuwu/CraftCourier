@@ -22,10 +22,10 @@ jobs:
       - run: echo "🖥️ The workflow is now ready to test your code on the runner."
       
       - name: 🔗 Build with Maven
-      - run: mvn clean install
+        run: mvn install
 
       - name: 🛒 Release
         if: startsWith(github.ref, 'refs/tags/')
         uses: softprops/action-gh-release@v1
         with:
-          files: target/KettraShop.jar
+          files: /target/KettraShop.jar
