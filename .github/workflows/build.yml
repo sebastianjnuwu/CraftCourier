@@ -17,6 +17,9 @@ jobs:
           java-version: '17'
 
       - name: 🔗 Build with Maven
+        run: ls
+        run: cd ${{ github.workspace }}
+        run: ls
         run: mvn clean install
 
       - name: 🛒 Release
@@ -24,9 +27,6 @@ jobs:
         uses: softprops/action-gh-release@v1
         with:
           files: target/KettraShop.jar
-
-      - name: 👻 List files in the repository
-        run: ls ${{ github.workspace }}
 
       - name: 🐦 Display job status
         run: echo "🍏 This job's status is ${{ job.status }}."
