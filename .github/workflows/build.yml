@@ -2,8 +2,8 @@ name: Minecraft Plugin (Build)
 
 on:
   push:
-    branches:
-      - plugin
+    tags:
+      - "v*.*.*"
 
 permissions:
   contents: write
