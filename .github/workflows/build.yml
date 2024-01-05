@@ -1,8 +1,8 @@
 name: Minecraft Plugin (Build)
 
 on:
-  push: 
-    - plugin
+ workflow_dispatch:
+
 
 permissions:
   contents: write
