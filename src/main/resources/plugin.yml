@@ -1,8 +1,10 @@
 name: "KettraShop"
-version: "1.2.8"
-api-version: 1.18
-main: kettraworld.com.Kw
-author: Sebastian Jn (sebastianjnuwu)
+version: "11.08.2024"
+api-version: 1.17
+main: kettraworld.com.BR
+depend: [nLogin]
+website: "https://github.com/kettraworld/KettraShop"
+author: "Sebastian Jn <sebastianjnuwu@gmail.com>"
 description: "Delivery of the products compared in the store..."
 commands:
   kw:

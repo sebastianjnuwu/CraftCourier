@@ -1,36 +1,22 @@
-# settings 
-# @player is a placeholder for player name!
-# @product is a placeholder for product name!
-# & exists to color the messages 
-# to run the command "/kw reload" you need to have "kw.reload" permission
 
-# MySql connection information
 MySQL:
-   host: 'database_host'
-   password: 'database_password'
-   user: 'database_user'
-   database: 'database_name'
+  host: ''
+  password: ''
+  user: ''
+  database: ''
 
-# time to search for approved purchase (m)
-time: 5
-
-# send notification to Discord 
 webhook:
- enable: false
- message: ""
- url: ""
- 
-# personalized messages
-message:
- inventory: "&cYour inventory is full! Unable to deliver your product."
- reload: "&aPlugin reloaded successfully!"
- permission: "&cYou do not have permission!"
+  enable: false 
+  url: "" 
+  message: ""
 
-# commands to be executed according to the product
-1:
- name: "product_name"
- inventory: false
- message: "&a you received @product!"
- commands:
- - say @player lol!
- - say plugin lol!
+table:
+  transaction:
+    table-name: "TRANSACTIONs"
+    status: 
+      default: 0
+      approved: 0
+      received: 4
+
+message:
+  inventory: "" 
