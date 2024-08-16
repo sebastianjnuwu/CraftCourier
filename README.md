@@ -1,16 +1,15 @@
-# Kettra Shop
+# CraftCourier
 
  <div align="center">
-  <img alt="profile" src="https://raw.githubusercontent.com/kettraworld/KettraShop/plugin/.github/icon.png" width="50%"  />
+  <img alt="profile" src="https://raw.githubusercontent.com/sebastianjnuwu/craftcourier/plugin/.github/icon.png" width="50%"  />
  
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg"/></a>
   <a href="https://app.codacy.com/gh/sebastianjnuwu/KettraShop/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img src="https://app.codacy.com/project/badge/Grade/c3793767a2cd498da1ae8dea9ebbba3c"/></a>
 </div>
 
-   <i>"The <b>KettraShop</b> plugin allows players to receive products from the virtual store directly into their in-game inventory, facilitating the shopping experience."</i>
+   <i>🛒 CraftCourier automates the delivery of items purchased in Minecraft virtual stores, ensuring fast and secure deliveries integrated with nLogin</i>
   
    - Discord webhook notification 
-   - Custom message for each product 
    - Full/empty inventory check 
    - Executing commands automatically 
 
