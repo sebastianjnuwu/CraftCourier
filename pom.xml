@@ -1,63 +1,79 @@
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
   <modelVersion>4.0.0</modelVersion>
+
+  <!-- Project Coordinates -->
   <groupId>craftcourier.spigot</groupId>
   <artifactId>CraftCourier</artifactId>
-  <name>CraftCourier</name>
   <version>1.0.0</version>
-  <description>CraftCourier automates the delivery of items purchased in Minecraft virtual stores, ensuring fast and secure deliveries integrated with nLogin</description>
   <packaging>jar</packaging>
+
+  <!-- Project Metadata -->
+  <name>CraftCourier</name>
+  <description>CraftCourier automates the delivery of items purchased in Minecraft virtual stores, ensuring fast and secure deliveries integrated with nLogin</description>
+
+  <!-- Properties -->
   <properties>
     <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
     <maven.compiler.source>1.8</maven.compiler.source>
     <maven.compiler.target>1.8</maven.compiler.target>
   </properties>
+
+  <!-- Build Configuration -->
   <build>
     <plugins>
+      <!-- Maven Resources Plugin to handle plugin.yml -->
       <plugin>
-            <groupId>org.apache.maven.plugins</groupId>
-            <artifactId>maven-resources-plugin</artifactId>
-            <version>3.3.1</version>
-            <executions>
-                <execution>
-                    <phase>prepare-package</phase>
-                    <goals>
-                        <goal>resources</goal>
-                    </goals>
-                    <configuration>
-                        <resources>
-                            <resource>
-                                <directory>src/main/resources</directory>
-                                <includes>
-                                    <include>plugin.yml</include>
-                                </includes>
-                                <filtering>true</filtering>
-                            </resource>
-                        </resources>
-                    </configuration>
-                </execution>
-            </executions>
-        </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-resources-plugin</artifactId>
+        <version>3.3.1</version>
+        <executions>
+          <execution>
+            <phase>prepare-package</phase>
+            <goals>
+              <goal>resources</goal>
+            </goals>
+            <configuration>
+              <resources>
+                <resource>
+                  <directory>src/main/resources</directory>
+                  <includes>
+                    <include>plugin.yml</include>
+                  </includes>
+                  <filtering>true</filtering>
+                </resource>
+              </resources>
+            </configuration>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Maven Shade Plugin for creating the fat jar -->
       <plugin>
-      <groupId>org.apache.maven.plugins</groupId>
-      <artifactId>maven-shade-plugin</artifactId>
-      <version>3.6.0</version>
-      <configuration>
-        <relocations>
-          <relocation>
-            <pattern>org.bstats</pattern>
-            <shadedPattern>craftcourier.spigot.Main</shadedPattern>
-          </relocation>
-        </relocations>
-      </configuration>
-      <executions>
-        <execution>
-          <phase>package</phase>
-          <goals>
-            <goal>shade</goal>
-          </goals>
-        </execution>
-      </executions>
-    </plugin>
+        <groupId>org.apache.maven.plugins</groupId>
+        <artifactId>maven-shade-plugin</artifactId>
+        <version>3.6.0</version>
+        <configuration>
+          <createDependencyReducedPom>false</createDependencyReducedPom>
+          <createSourcesJar>false</createSourcesJar>
+          <createOriginalJar>false</createOriginalJar>
+          <relocations>
+            <relocation>
+              <pattern>org.bstats</pattern>
+              <shadedPattern>craftcourier.spigot.Main</shadedPattern>
+            </relocation>
+          </relocations>
+        </configuration>
+        <executions>
+          <execution>
+            <phase>package</phase>
+            <goals>
+              <goal>shade</goal>
+            </goals>
+          </execution>
+        </executions>
+      </plugin>
+
+      <!-- Maven Compiler Plugin to set Java version -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-compiler-plugin</artifactId>
@@ -67,6 +83,8 @@
           <target>1.8</target>
         </configuration>
       </plugin>
+
+      <!-- Maven Jar Plugin to handle JAR creation -->
       <plugin>
         <groupId>org.apache.maven.plugins</groupId>
         <artifactId>maven-jar-plugin</artifactId>
@@ -76,33 +94,38 @@
             <manifestEntries>
               <Main-Class>craftcourier.spigot.Main</Main-Class>
             </manifestEntries>
+            <addMavenDescriptor>false</addMavenDescriptor>
           </archive>
         </configuration>
       </plugin>
     </plugins>
   </build>
+
+  <!-- Repositories -->
   <repositories>
     <repository>
-    <id>nickuc-repo</id>
-    <url>https://repo.nickuc.com/maven-releases/</url>
-  </repository>
+      <id>nickuc-repo</id>
+      <url>https://repo.nickuc.com/maven-releases/</url>
+    </repository>
     <repository>
       <id>spigot-repo</id>
       <url>https://hub.spigotmc.org/nexus/content/repositories/snapshots/</url>
     </repository>
   </repositories>
+
+  <!-- Dependencies -->
   <dependencies>
     <dependency>
-  <groupId>org.bstats</groupId>
-  <artifactId>bstats-bukkit</artifactId>
-  <version>3.0.2</version>
-  <scope>compile</scope>
-</dependency>
+      <groupId>org.bstats</groupId>
+      <artifactId>bstats-bukkit</artifactId>
+      <version>3.0.2</version>
+      <scope>compile</scope>
+    </dependency>
     <dependency>
-  <groupId>com.google.code.gson</groupId>
-  <artifactId>gson</artifactId>
-  <version>2.11.0</version>
-</dependency>
+      <groupId>com.google.code.gson</groupId>
+      <artifactId>gson</artifactId>
+      <version>2.11.0</version>
+    </dependency>
     <dependency>
       <groupId>org.spigotmc</groupId>
       <artifactId>spigot-api</artifactId>
