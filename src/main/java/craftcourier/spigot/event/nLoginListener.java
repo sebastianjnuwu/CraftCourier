@@ -1,22 +1,22 @@
-package kettraworld.com.event;
+package craftcourier.spigot.event;
 
-import kettraworld.com.BR;
+import craftcourier.spigot.Main;
 import org.bukkit.event.EventHandler;
 import org.bukkit.event.Listener;
 import org.bukkit.plugin.java.JavaPlugin;
 import com.nickuc.login.api.event.bukkit.auth.LoginEvent;
 
-public class LoginListener implements Listener {
+public class nLoginListener implements Listener {
 
-  private BR plugin;
+  private Main plugin;
 
-  public LoginListener(BR plugin) {
+  public nLoginListener(Main plugin) {
     this.plugin = plugin;
   }
 
   @EventHandler
   public void onLogin(LoginEvent e) {
-   plugin.sql.SearchPurchase(e.getPlayer());
+    plugin.sql.$Purchase(e.getPlayer());
   }
   
 }

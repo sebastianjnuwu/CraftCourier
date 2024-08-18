@@ -1,13 +1,10 @@
-name: "KettraShop"
-version: "11.08.2024"
+name: "${project.name}"
+version: "${project.version}"
 api-version: 1.17
-main: kettraworld.com.BR
+main: craftcourier.spigot.Main
+website: "https://github.com/sebastianjnuwu/craftcourier"
 depend: [nLogin]
-website: "https://github.com/kettraworld/KettraShop"
-author: "Sebastian Jn <sebastianjnuwu@gmail.com>"
-description: "Delivery of the products compared in the store..."
-commands:
-  kw:
-    permision: "kw.reload"
-    description: "Command used no KettraShop plugin"
-    usage: /kw <reload>
+author: [
+  "Sebastian Jn <sebastianjnuwu@gmail.com>",
+  ]
+description: "${project.description}"

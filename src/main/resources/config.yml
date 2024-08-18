@@ -1,22 +1,40 @@
 
-MySQL:
-  host: ''
-  password: ''
-  user: ''
-  database: ''
 
+# Database configuration
+database:
+  hostname: "localhost:3306"  # The hostname and port of your MySQL server
+  database: "database_name"    # The name of the database to use
+  username: "username"         # The username to connect to the database
+  password: "password"         # The password to connect to the database
+
+# Webhook configuration
 webhook:
-  enable: false 
-  url: "" 
-  message: ""
+  enable: false   # Enable or disable webhook notifications
+  url: ""         # The URL to send webhook notifications to
+  message: ""     # The message to send via the webhook when a purchase is processed
 
+# Table configuration for transactions
 table:
   transaction:
-    table-name: "TRANSACTIONs"
+    table-name: "TRANSACTIONS"  # The name of the transactions table in your database
+    columns:
+      nickname: "nickname"      # The column name for the player's nickname
+      status: "status"          # The column name for the transaction status
+      uuid: "uuid"              # The column name for the player's UUID
     status: 
-      default: 0
-      approved: 0
-      received: 4
+      default: 0                # Default status code for transactions
+      approved: 1               # Status code for approved transactions
+      received: 2               # Status code for received transactions
 
+# Bonus configuration
+bonus:
+  enable: true   # Enable or disable the bonus feature
+  amount: 2 # The number of purchases required to receive a bonus
+  message: "&aCongratulations, you have received a bonus thanks to purchases made on the server!"  # The message sent to the player when they receive a bonus
+  command: "give @player diamond 1"  # The command executed to give the player their bonus
+
+# Message configuration
 message:
-  inventory: "" 
+  notification: "&aPlayer @player received their purchase: @product (@command)"  # Notification message when a player receives a purchase
+  permission: "&cYou do not have permission to execute this command!"            # Message when a player lacks permission
+  inventory: "&eEmpty your inventory to receive your purchase, and log in again!"  # Message when a player's inventory is full
