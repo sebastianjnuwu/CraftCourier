@@ -3,6 +3,7 @@
 <div align="center">
   <img alt="profile" src="https://raw.githubusercontent.com/sebastianjnuwu/craftcourier/plugin/.github/icon.png" width="50%"  />
  
+  <a href="https://github.com/sebastianjnuwu/CraftCourier/actions"><img alt="Build" src="https://github.com/sebastianjnuwu/CraftCourier/actions/workflows/build.yml/badge.svg"/></a>
   <a href="https://opensource.org/licenses/Apache-2.0"><img alt="License" src="https://img.shields.io/badge/License-Apache%202.0-yellow.svg"/></a>
   <a href="https://app.codacy.com/gh/sebastianjnuwu/KettraShop/dashboard?utm_source=gh&utm_medium=referral&utm_content=&utm_campaign=Badge_grade"><img src="https://app.codacy.com/project/badge/Grade/c3793767a2cd498da1ae8dea9ebbba3c"/></a>
 </div>
@@ -17,7 +18,7 @@
 
 **CraftCourier** is an advanced plugin designed to seamlessly manage and execute the delivery of purchased items in Minecraft servers. It efficiently tracks approved purchases and automatically executes the necessary commands to deliver products directly to players.
 
-- Download the plugin by clicking [here!](https://cdn.discordapp.com/attachments/1273992923738017834/1274743473362436147/CraftCourier-1.0.0.jar)
+- Download the plugin by clicking [here!](https://github.com/sebastianjnuwu/CraftCourier/actions)
 
 ## ⚙️ Config
 
