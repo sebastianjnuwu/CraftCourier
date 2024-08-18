@@ -1,5 +1,11 @@
-
-
+#    ___  __   _  _  ____  __  ____  ____
+#  / __)/  \ / )( \(  _ \(  )(  __)(  _ \
+# ( (__(  O )) \/ ( )   / )(  ) _)  )   /
+# \___)\__/ \____/(__\_)(__)(____)(__\_)
+#
+#  • GitHub: https://github.com/sebastianjnuwu/craftcourier
+#
+ 
 # Database configuration
 database:
   hostname: "localhost:3306"  # The hostname and port of your MySQL server
