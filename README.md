@@ -1,6 +1,7 @@
-# CraftCourier
-
 <div align="center">
+
+<h1>CraftCourier</h1>
+  
   <img alt="profile" src="https://raw.githubusercontent.com/sebastianjnuwu/craftcourier/plugin/.github/icon.png" width="50%"  />
  
   <a href="https://github.com/sebastianjnuwu/CraftCourier/actions"><img alt="Build" src="https://github.com/sebastianjnuwu/CraftCourier/actions/workflows/build.yml/badge.svg"/></a>
@@ -18,7 +19,7 @@
 
 **CraftCourier** is an advanced plugin designed to seamlessly manage and execute the delivery of purchased items in Minecraft servers. It efficiently tracks approved purchases and automatically executes the necessary commands to deliver products directly to players.
 
-- Download the plugin by clicking [here!](https://github.com/sebastianjnuwu/CraftCourier/actions)
+- Download: Click [here!](https://github.com/sebastianjnuwu/CraftCourier/actions)
 
 ## ⚙️ Config
 
