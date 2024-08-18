@@ -1,4 +1,4 @@
-name: Java CI with Maven
+name: ✨ Build 
 
 on:
   workflow_dispatch:
@@ -31,6 +31,5 @@ jobs:
     - name: Archive JAR Artifact
       uses: actions/upload-artifact@v3
       with:
-        name: spigot-plugin
+        name: CraftCourier
         path: target/*.jar
-        
